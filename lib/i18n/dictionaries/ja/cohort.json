@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "リサーチジャーニー",
+    "journeySubtitle": "研究にご協力いただくため、各ステップを順番に完了してください。",
+    "progressLabel": "{percent}% 完了",
+    "steps": {
+      "pre_assessment": "事前アセスメント調査",
+      "quick_dive": "Quick Dive 探索",
+      "deep_dive": "Deep Dive アセスメント",
+      "post_immediate": "事後アセスメント調査",
+      "post_1week": "フォローアップ調査（1週間後）",
+      "coaching": "AIキャリアコーチング"
+    },
+    "status": {
+      "completed": "完了",
+      "current": "今すぐ開始",
+      "locked": "ロック中",
+      "available": "利用可能"
+    },
+    "gateMessage": "探索を開始する前に、事前アセスメント調査を完了してください。",
+    "post1weekNotYet": "事後アセスメントの7日後に利用可能になります。",
+    "allComplete": "ありがとうございます！すべてのリサーチステップを完了しました。"
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "hero": {
+    "badge": "Human-Centric AI Career Exploration Platform",
+    "heading": "Find the work that feels like you.",
+    "headingAccent": "",
+    "subtitle": "Before you start running, rest. Before you sprint, descend. Deep Dive reveals your pattern, your strengths, and the work that truly fits.",
+    "cta": "Begin the Dive",
+    "ctaNote": "Free · ~5 min · 38 questions · Instant results",
+    "ctaNoSignup": "No sign-up required to start",
+    "ctaReturning": "See My Results",
+    "ctaReturningNote": "Welcome back · Register to unlock your full profile",
+    "trustPillars": [
+      "Rigorous science",
+      "Warm AI",
+      "Look inward",
+      "For everyone"
+    ],
+    "firstDescentRitual": "See how it works",
+    "ritualLink": "Five minutes to your first mirror"
+  },
+  "showcase": {
+    "meter": [
+      "Surface",
+      "Clarity",
+      "Direction",
+      "Discover"
+    ],
+    "railLabel": "Depth navigation",
+    "depthChoice": {
+      "title": "Choose your depth",
+      "desc": "Pick the experience that fits where you are."
+    },
+    "stats": [
+      {
+        "value": "38",
+        "label": "questions · ~5 min"
+      },
+      {
+        "value": "12",
+        "label": "career archetypes"
+      },
+      {
+        "value": "5",
+        "label": "psychology frameworks"
+      }
+    ],
+    "depthCards": [
+      {
+        "t": "Quick Dive",
+        "d": "Spark insight and map your interest radar.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "A richer exploration for clearer patterns and directions.",
+        "tm": "~30–40 min"
+      },
+      {
+        "t": "Immersive Dive",
+        "d": "A guided journey for complete clarity.",
+        "tm": "~60+ min"
+      }
+    ],
+    "entryCard": {
+      "t": "Begin here",
+      "d": "Five minutes below the surface — your first mirror."
+    },
+    "returningCard": {
+      "t": "Continue your dive",
+      "d": "Pick up where the water left you."
+    },
+    "instruments": {
+      "reportChapters": [
+        "Career Anchors",
+        "Your Landscape",
+        "The Shadow Side",
+        "A Letter to You",
+        "Methodology"
+      ],
+      "tools": [
+        "Resume polish",
+        "Cover letter",
+        "Interview prep",
+        "Elevator pitch",
+        "LinkedIn rewrite",
+        "Networking icebreakers",
+        "Action plan"
+      ],
+      "coach": {
+        "context": "Coach has read your assessment profile",
+        "user": "Why do I keep leaving jobs after two years?",
+        "reply": "Your values map says autonomy outranks stability — the pattern isn't restlessness, it's a search for room to build."
+      }
+    },
+    "portrait": {
+      "title": "Your interest profile",
+      "dims": [
+        "Build",
+        "Investigate",
+        "Create",
+        "Connect",
+        "Lead",
+        "Organize"
+      ]
+    }
+  },
+  "story": {
+    "storyBefore": "We built this because we were lost too —\nwatching AI do what we spent years learning,\nwondering if we’d still matter.",
+    "storyHighlight": "Then we realized: the answer was never out there. It was always in here.",
+    "storyAfter": "This tool is a gift we made for ourselves, and now for you."
+  },
+  "journey": {
+    "label": "YOUR JOURNEY",
+    "heading": "From self-knowledge",
+    "headingAccent": "to career action.",
+    "items": [
+      {
+        "t": "Quick Dive",
+        "d": "38 career interest and values questions, about 5 minutes. Map your RIASEC profile, discover your value orientation, and see which directions energize you most.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "86 scenario-based questions across personality, values, and cognitive style. Not checkboxes — real dilemmas that reveal what your résumé never shows.",
+        "tm": "~20 min"
+      },
+      {
+        "t": "Your Portrait",
+        "d": "Your psychological profile — revealed instantly. Career archetype, personality dimensions, cognitive style, shadow side. A mirror for how you tend to show up, beyond what your résumé says.",
+        "tm": "Instant"
+      },
+      {
+        "t": "Your Map",
+        "d": "AI-generated career report: career anchors, top matches, growth paths, and blind spots. Not generic advice — a map drawn from your unique pattern.",
+        "tm": "AI-crafted"
+      },
+      {
+        "t": "Coach + Action",
+        "d": "Not a chatbot. A coach that reads your assessment context — your values, tensions, and career directions. Plus a personalized action plan that turns reflection into concrete next steps.",
+        "tm": "Ongoing"
+      }
+    ]
+  },
+  "features": {
+    "label": "WHAT YOU'LL GET",
+    "heading": "The work that fits you starts",
+    "headingAccent": "with how you notice the world.",
+    "items": [
+      {
+        "t": "Career Exploration Report",
+        "d": "A full career portrait drawn from your unique pattern."
+      },
+      {
+        "t": "Action Hub",
+        "d": "Turn insight into intentional action and measurable progress."
+      },
+      {
+        "t": "AI Coach",
+        "d": "Your private thinking partner for deeper clarity."
+      },
+      {
+        "t": "Personal Profile",
+        "d": "Your psychological profile, revealed instantly."
+      }
+    ]
+  },
+  "archetypes": {
+    "label": "12 CAREER ARCHETYPES",
+    "hoverCaption": "One of these is you",
+    "heading": "Not labels.",
+    "headingAccent": "Portraits.",
+    "description": "Each archetype maps two interest dimensions to a career identity — with its own strengths, growth edges, and career directions. You’ll see which roles naturally fit, which ones drain you, and why your past choices make more sense than you thought.",
+    "items": [
+      {
+        "name": "The Architect",
+        "sub": "Hands-on creation"
+      },
+      {
+        "name": "The Tactician",
+        "sub": "Pattern recognition"
+      },
+      {
+        "name": "The Icon",
+        "sub": "Aesthetic vision"
+      },
+      {
+        "name": "The Mentor",
+        "sub": "Human potential"
+      },
+      {
+        "name": "The Ace",
+        "sub": "Bold disruption"
+      },
+      {
+        "name": "The Commander",
+        "sub": "Systems thinking"
+      }
+    ],
+    "moreNote": "+ 6 more archetypes to discover",
+    "marquee": [
+      "The Architect",
+      "The Scientist",
+      "The Tactician",
+      "The Icon",
+      "The Healer",
+      "The Mentor",
+      "The Ace",
+      "The Commander",
+      "The Pioneer",
+      "The Visionary",
+      "The Advocate",
+      "The Steward"
+    ]
+  },
+  "whoFor": {
+    "label": "WHO IT'S FOR",
+    "heading": "Built for those navigating",
+    "headingAccent": "uncharted waters.",
+    "items": [
+      {
+        "t": "Cross-Cultural Professionals",
+        "d": "Building a career across countries and cultures without a home-court advantage. Deep Dive maps how your cross-cultural identity shapes your career strengths — so you stop seeing it as a gap and start using it as an edge."
+      },
+      {
+        "t": "People Finding Themselves in the AI Wave",
+        "d": "When AI can write, design, translate, and code — what’s left that’s yours? That question isn’t weakness. It’s the beginning of something important. Deep Dive helps you notice what is harder to replace simply — what you truly care about."
+      },
+      {
+        "t": "Career Changers",
+        "d": "Feeling the pull toward something new but unsure which direction fits the real you. Deep Dive identifies the thread connecting your past roles — and points to where it leads next."
+      },
+      {
+        "t": "New Graduates",
+        "d": "Infinite options, zero clarity. Deep Dive cuts through the noise with a profile built on how you actually think and decide — not what the market says you should want."
+      }
+    ]
+  },
+  "science": {
+    "label": "METHODOLOGY",
+    "heading": "Rigorous psychology.",
+    "headingAccent": "Warm experience.",
+    "stats": [
+      {
+        "l": "Frameworks",
+        "v": "5"
+      },
+      {
+        "l": "Archetypes",
+        "v": "12"
+      },
+      {
+        "l": "Questions",
+        "v": "124"
+      }
+    ],
+    "foundations": "Built on O*NET Interest Profiler · IPIP · Schwartz Values · Big Five",
+    "academic": "Academic research at the University of Amsterdam — thesis-grade rigor, product-grade experience.",
+    "credibility": [
+      "Grounded in validated instruments used in career research worldwide — not personality quizzes from a blog post.",
+      "We don’t share your data. You can export it or request deletion anytime."
+    ],
+    "affiliation": "University of Amsterdam research"
+  },
+  "privacy": {
+    "quote": "What you share here\nnever leaves the deep.",
+    "desc": "Real self-exploration requires real privacy. Your doubts, ambitions, and contradictions — protected here, and always yours to export or delete.",
+    "note": "Privacy-first · exportable and deletable",
+    "cta": "Your data, your rules"
+  },
+  "breathQuote": "Your patterns are not random.\nThey are messages.",
+  "glassCard": {
+    "label": "Your Career Identity",
+    "title": "The Investigator",
+    "subtitle": "Understand · Clarify · Make Sense",
+    "quote": "\"Your patterns are not random. They are messages.\""
+  },
+  "glimpse": "A glimpse of what you might find",
+  "cta": {
+    "heading": "Your inner voice has been waiting",
+    "headingAccent": "for you to slow down and listen.",
+    "description": "The pattern behind your career decisions has been there all along. It just needs a name.",
+    "button": "Discover My Pattern",
+    "buttonReturning": "Continue My Journey",
+    "note": "Start free · ~5 minutes · 38-question Quick Dive",
+    "noteReturning": "Register to unlock your Deep Dive report + AI coaching"
+  },
+  "footer": {
+    "tagline": "Human-Centric AI — look inward, understand your distinct strengths",
+    "motto": "Dive deep. Hear your own voice.",
+    "nav": [
+      "Deep Dive",
+      "My Profile"
+    ],
+    "trust": [
+      "Public scale foundations",
+      "Privacy-first · exportable and deletable",
+      "Secure cloud storage"
+    ]
+  },
+  "panels": {
+    "journeyNote": "of the way",
+    "privacyHeading": "Private by design",
+    "trio": [
+      "Your journey is yours",
+      "Evidence-based",
+      "Built for reflection"
+    ],
+    "caps": {
+      "identityMap": "Identity Map",
+      "strengths": "Top Strengths",
+      "values": "Core Values",
+      "realityFit": "Reality Fit",
+      "directions": "Career Directions",
+      "fitSignals": "Fit Signals",
+      "evidence": "Evidence Notes",
+      "nextStep": "Next Step",
+      "milestones": "Milestones",
+      "decisionClarity": "Decision Clarity",
+      "progress": "Progress"
+    },
+    "coda": {
+      "line": "Go deeper. Live clearer.",
+      "sub": "one ocean, two hours"
+    }
+  }
+}

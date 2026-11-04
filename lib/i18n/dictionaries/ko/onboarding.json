@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "환영합니다",
+    "subtitle": "자신에 대해 조금 알려주세요",
+    "step1Title": "현재 커리어 단계는?",
+    "step1Options": {},
+    "step2Title": "여기 오신 이유는?",
+    "step2Options": {},
+    "startButton": "시작하기",
+    "skipButton": "나중에 하기"
+  }
+}

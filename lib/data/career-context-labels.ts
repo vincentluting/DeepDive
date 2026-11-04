@@ -1,0 +1,86 @@
+// Bilingual labels for career context terms used in shadow insights.
+// Source strings come from lib/content/shadow-content.ts (advantageousContexts).
+// This file provides Chinese translations for the UI layer.
+import type { Locale } from '@/lib/i18n/config';
+
+export const CAREER_CONTEXT_ZH: Record<string, string> = {
+  'Research & analysis': '研究与分析',
+  'Writing & content strategy': '写作与内容策略',
+  'UX research': '用户体验研究',
+  'Individual counseling & coaching': '个人咨询与教练',
+  'Technical depth roles': '技术深度角色',
+  'Deep consulting & advisory': '深度咨询与顾问',
+  'Documentation & knowledge work': '文档与知识管理',
+  'Negotiation & deal-making': '谈判与交易',
+  'Legal & compliance': '法务与合规',
+  'Investigative journalism': '调查记者',
+  'Product strategy & prioritization': '产品策略与优先排序',
+  'Venture evaluation & due diligence': '投资评估与尽调',
+  'Competitive intelligence': '竞争情报',
+  'Adversarial review (security, audit)': '对抗性评审（安全/审计）',
+  'Entrepreneurship & startups': '创业与初创公司',
+  'Creative direction': '创意指导',
+  'Crisis response & turnaround': '危机应对与扭转',
+  'Rapid prototyping & iteration': '快速原型与迭代',
+  'Freelance & portfolio work': '自由职业与组合工作',
+  'Innovation & R&D': '创新与研发',
+  'Growth & experimentation roles': '增长与实验角色',
+  'Operations & process design': '运营与流程设计',
+  'Quality assurance & testing': '质量保证与测试',
+  'Implementation & delivery': '实施与交付',
+  'Standards & compliance': '标准与合规',
+  'Audit & internal control': '审计与内部控制',
+  'Technical execution': '技术执行',
+  'Domain expertise & deep specialization': '领域专精与深度专业化',
+  'Counseling & psychotherapy': '心理咨询与治疗',
+  'Conflict mediation': '冲突调解',
+  'UX research & usability testing': '用户研究与可用性测试',
+  'Social work & advocacy': '社会工作与权益倡导',
+  'Qualitative research': '质性研究',
+  'Customer experience design': '客户体验设计',
+  'Team culture & organizational development': '团队文化与组织发展',
+};
+
+export const CAREER_CONTEXT_NL: Record<string, string> = {
+  'Research & analysis': 'Onderzoek & analyse',
+  'Writing & content strategy': 'Schrijven & contentstrategie',
+  'UX research': 'UX-onderzoek',
+  'Individual counseling & coaching': 'Individuele begeleiding & coaching',
+  'Technical depth roles': 'Technisch verdiepende rollen',
+  'Deep consulting & advisory': 'Diepgaande consultancy & advies',
+  'Documentation & knowledge work': 'Documentatie & kenniswerk',
+  'Negotiation & deal-making': 'Onderhandeling & deals sluiten',
+  'Legal & compliance': 'Juridisch & compliance',
+  'Investigative journalism': 'Onderzoeksjournalistiek',
+  'Product strategy & prioritization': 'Productstrategie & prioritering',
+  'Venture evaluation & due diligence': 'Venture-evaluatie & due diligence',
+  'Competitive intelligence': 'Concurrentieanalyse',
+  'Adversarial review (security, audit)': 'Tegenspraakreview (security, audit)',
+  'Entrepreneurship & startups': 'Ondernemerschap & startups',
+  'Creative direction': 'Creatieve leiding',
+  'Crisis response & turnaround': 'Crisisrespons & turnaround',
+  'Rapid prototyping & iteration': 'Snel prototypen & itereren',
+  'Freelance & portfolio work': 'Freelance- & portfoliowerk',
+  'Innovation & R&D': 'Innovatie & R&D',
+  'Growth & experimentation roles': 'Groei- & experimenteerrollen',
+  'Operations & process design': 'Operations & procesontwerp',
+  'Quality assurance & testing': 'Kwaliteitsborging & testen',
+  'Implementation & delivery': 'Implementatie & oplevering',
+  'Standards & compliance': 'Standaarden & compliance',
+  'Audit & internal control': 'Audit & interne controle',
+  'Technical execution': 'Technische uitvoering',
+  'Domain expertise & deep specialization': 'Domeinexpertise & diepe specialisatie',
+  'Counseling & psychotherapy': 'Counseling & psychotherapie',
+  'Conflict mediation': 'Conflictmediation',
+  'UX research & usability testing': 'UX-onderzoek & usability testing',
+  'Social work & advocacy': 'Sociaal werk & belangenbehartiging',
+  'Qualitative research': 'Kwalitatief onderzoek',
+  'Customer experience design': 'Customer experience design',
+  'Team culture & organizational development': 'Teamcultuur & organisatieontwikkeling',
+};
+
+export function getCareerContextLabel(ctx: string, locale: Locale): string {
+  if (locale === 'zh') return CAREER_CONTEXT_ZH[ctx] ?? ctx;
+  if (locale === 'nl') return CAREER_CONTEXT_NL[ctx] ?? ctx;
+  return ctx;
+}

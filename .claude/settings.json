@@ -1,0 +1,136 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(**)",
+      "Write(**)",
+      "Glob(*)",
+      "Grep(*)",
+      "Agent(*)",
+      "Bash(npm run *)",
+      "Bash(npm run build)",
+      "Bash(npm run dev)",
+      "Bash(npm run lint)",
+      "Bash(npm run test)",
+      "Bash(npm run lint:i18n)",
+      "Bash(npx tsc *)",
+      "Bash(npx vitest *)",
+      "Bash(npx tsx scripts/*)",
+      "Bash(npx playwright *)",
+      "Bash(npx depcheck *)",
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(mkdir *)",
+      "Bash(mv *)",
+      "Bash(node *)",
+      "Bash(npm audit *)",
+      "Bash(npm install *)",
+      "mcp__sentry__*",
+      "mcp__neon__*",
+      "mcp__github__*",
+      "mcp__notion__*",
+      "mcp__vercel__*",
+      "mcp__claude_ai_Gmail__*",
+      "mcp__claude_ai_Google_Calendar__*",
+      "WebFetch(*)",
+      "WebSearch(*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~*)",
+      "Bash(npm publish *)",
+      "Bash(npx vercel *)",
+      "Bash(git push *--force*)",
+      "Bash(git reset --hard*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | bash $CLAUDE_PROJECT_DIR/.claude/hooks/guard-frozen.sh"
+          },
+          {
+            "type": "command",
+            "command": "cat | bash $CLAUDE_PROJECT_DIR/.claude/hooks/dynamic-freeze.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | bash $CLAUDE_PROJECT_DIR/.claude/hooks/guard-e2e.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd $CLAUDE_PROJECT_DIR && FILE=$(cat | jq -r '.tool_input.file_path // empty') && [ -n \"$FILE\" ] && [ -f \"$FILE\" ] && npx prettier --write \"$FILE\" 2>/dev/null; exit 0"
+          },
+          {
+            "type": "command",
+            "command": "cat | bash $CLAUDE_PROJECT_DIR/.claude/hooks/post-edit-test.sh",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | bash $CLAUDE_PROJECT_DIR/.claude/hooks/smart-reminder.sh 2>/dev/null || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"需要你的批准 — 请切换到终端窗口\" with title \"Claude Code\" sound name \"Ping\"'",
+            "timeout": 5,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash $CLAUDE_PROJECT_DIR/.claude/hooks/verify-on-stop.sh",
+            "timeout": 90
+          },
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"任务已完成 — 请查看结果\" with title \"Claude Code\" sound name \"Glass\"'",
+            "timeout": 5,
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}

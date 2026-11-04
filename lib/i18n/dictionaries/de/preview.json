@@ -1,0 +1,326 @@
+{
+  "hero": {
+    "badge": "Menschenzentrierte KI-Karriereplattform",
+    "heading": "Finde die Arbeit, die sich anfühlt wie du.",
+    "headingAccent": "",
+    "subtitle": "Erst mal innehalten. Und auf dich selbst hören.",
+    "cta": "Beginne nach Innen zu schauen",
+    "ctaNote": "Kostenlos · 3–5 Min · 38 Fragen · Sofortergebnis",
+    "ctaNoSignup": "Keine Anmeldung nötig",
+    "ctaReturning": "Meine Ergebnisse ansehen",
+    "ctaReturningNote": "Willkommen zurück · Registriere dich, um dein vollständiges Profil freizuschalten",
+    "trustPillars": [
+      "Wissenschaftlich fundiert",
+      "Einfühlsame KI",
+      "Nach innen schauen",
+      "Für alle"
+    ],
+    "firstDescentRitual": "5 Minuten, bis zum ersten Spiegel →",
+    "ritualLink": "Fünf Minuten bis zu deinem ersten Spiegel"
+  },
+  "showcase": {
+    "meter": [
+      "Oberfläche",
+      "Klarheit",
+      "Richtung",
+      "Entdeckung"
+    ],
+    "railLabel": "Tiefennavigation",
+    "depthChoice": {
+      "title": "Wähle deine Tiefe",
+      "desc": "Wähle die Erfahrung, die gerade zu dir passt."
+    },
+    "stats": [
+      {
+        "value": "38",
+        "label": "Fragen · ca. 5 Min."
+      },
+      {
+        "value": "12",
+        "label": "Karriere-Archetypen"
+      },
+      {
+        "value": "5",
+        "label": "psychologische Rahmenwerke"
+      }
+    ],
+    "depthCards": [
+      {
+        "t": "Quick Dive",
+        "d": "Wecke erste Einsichten und kartiere deinen Interessenradar.",
+        "tm": "~5 Min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "Eine reichere Erkundung für klarere Muster und Richtungen.",
+        "tm": "~30–40 Min"
+      },
+      {
+        "t": "Immersive Dive",
+        "d": "Eine geführte Reise zu vollständiger Klarheit.",
+        "tm": "~60+ Min"
+      }
+    ],
+    "entryCard": {
+      "t": "Hier beginnen",
+      "d": "Fünf Minuten unter der Oberfläche — dein erster Spiegel."
+    },
+    "returningCard": {
+      "t": "Tauchgang fortsetzen",
+      "d": "Mach dort weiter, wo du aufgehört hast."
+    },
+    "instruments": {
+      "reportChapters": [
+        "Karriereanker",
+        "Deine Landschaft",
+        "Die Schattenseite",
+        "Ein Brief an dich",
+        "Methodik"
+      ],
+      "tools": [
+        "Lebenslauf-Politur",
+        "Anschreiben",
+        "Interview-Vorbereitung",
+        "Elevator Pitch",
+        "LinkedIn-Überarbeitung",
+        "Networking-Eisbrecher",
+        "Aktionsplan"
+      ],
+      "coach": {
+        "context": "Der Coach hat dein Assessment-Profil gelesen",
+        "user": "Warum kündige ich immer nach zwei Jahren?",
+        "reply": "Deine Wertekarte zeigt: Autonomie steht über Stabilität — das Muster ist keine Rastlosigkeit, sondern die Suche nach Raum zum Gestalten."
+      }
+    },
+    "portrait": {
+      "title": "Dein Interessenprofil",
+      "dims": [
+        "Bauen",
+        "Erforschen",
+        "Gestalten",
+        "Verbinden",
+        "Führen",
+        "Ordnen"
+      ]
+    }
+  },
+  "story": {
+    "storyBefore": "Wir haben das gebaut, weil wir selbst verloren waren —\nwährend KI das tat, wofür wir jahrelang gelernt hatten,\nfragten wir uns, ob wir noch zählen.",
+    "storyHighlight": "Dann erkannten wir: Die Antwort war nie da draußen. Sie war immer hier drin.",
+    "storyAfter": "Dieses Tool ist ein Geschenk, das wir für uns selbst gemacht haben — und jetzt für dich."
+  },
+  "journey": {
+    "label": "DEINE REISE",
+    "heading": "Von Selbsterkenntnis",
+    "headingAccent": "zu Karrierehandlung.",
+    "items": [
+      {
+        "t": "Quick Dive",
+        "d": "38 Fragen zu Berufsinteressen, ca. 5 Minuten. Erstelle dein RIASEC-Profil und finde heraus, welche Richtungen dich am meisten begeistern.",
+        "tm": "~5 Min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "87 szenariobasierte Fragen zu Persönlichkeit, Werten und Denkstil. Keine Ankreuzfelder — echte Dilemmas, die zeigen, was dein Lebenslauf nie verrät.",
+        "tm": "~20 Min"
+      },
+      {
+        "t": "Dein Porträt",
+        "d": "Dein psychologisches Profil — sofort enthüllt. Karriere-Archetyp, Persönlichkeitsdimensionen, Denkstil, Schattenseite. Ein Spiegel, der zeigt, wer du wirklich bist — nicht wer dein Lebenslauf sagt.",
+        "tm": "Sofort"
+      },
+      {
+        "t": "Deine Karte",
+        "d": "KI-generierter Karrierebericht: Karriereanker, beste Übereinstimmungen, Wachstumspfade und blinde Flecken. Keine Standardratschläge — eine Karte aus deinem einzigartigen Muster.",
+        "tm": "KI-erstellt"
+      },
+      {
+        "t": "Coach + Aktion",
+        "d": "Kein Chatbot. Ein Coach, der deinen Auswertungskontext liest – deine Werte, Spannungen und Karriererichtungen. Dazu ein personalisierter Aktionsplan, der Reflexion in konkrete nächste Schritte übersetzt.",
+        "tm": "Fortlaufend"
+      }
+    ]
+  },
+  "features": {
+    "label": "WAS DICH ERWARTET",
+    "heading": "Ein Spiegel,",
+    "headingAccent": "dann eine Karte.",
+    "items": [
+      {
+        "t": "Karriere-Explorationsbericht",
+        "d": "Ein vollständiges Karriereporträt, gezeichnet aus deinem einzigartigen Muster."
+      },
+      {
+        "t": "Action Hub",
+        "d": "Verwandle Einsicht in bewusstes Handeln und messbaren Fortschritt."
+      },
+      {
+        "t": "AI Coach",
+        "d": "Dein privater Denkpartner für tiefere Klarheit."
+      },
+      {
+        "t": "Persönliches Profil",
+        "d": "Dein psychologisches Profil, sofort sichtbar."
+      }
+    ]
+  },
+  "archetypes": {
+    "label": "12 KARRIERE-ARCHETYPEN",
+    "hoverCaption": "Eine davon bist du",
+    "heading": "Keine Schubladen.",
+    "headingAccent": "Porträts.",
+    "description": "Jeder Archetyp verbindet zwei Interessendimensionen mit einer Karriereidentität — mit eigenen Stärken, Wachstumsfeldern und Karriererichtungen. Du siehst, welche Rollen natürlich passen, welche dich auslaugen, und warum deine bisherigen Entscheidungen mehr Sinn ergeben als du dachtest.",
+    "items": [
+      {
+        "name": "Der Erbauer",
+        "sub": "Praktisches Gestalten"
+      },
+      {
+        "name": "Der Analyst",
+        "sub": "Mustererkennung"
+      },
+      {
+        "name": "Der Virtuose",
+        "sub": "Ästhetische Vision"
+      },
+      {
+        "name": "Der Coach",
+        "sub": "Menschliches Potenzial"
+      },
+      {
+        "name": "Der Querdenker",
+        "sub": "Mutiges Aufbrechen"
+      },
+      {
+        "name": "Der Architekt",
+        "sub": "Systemdenken"
+      }
+    ],
+    "moreNote": "+ 6 weitere Archetypen entdecken",
+    "marquee": [
+      "Der Erbauer",
+      "Der Wissenschaftler",
+      "Der Analyst",
+      "Der Virtuose",
+      "Der Heiler",
+      "Der Coach",
+      "Der Querdenker",
+      "Der Architekt",
+      "Der Pionier",
+      "Der Visionär",
+      "Der Fürsprecher",
+      "Der Prinzipal"
+    ]
+  },
+  "whoFor": {
+    "label": "FÜR WEN",
+    "heading": "Gebaut für alle, die durch",
+    "headingAccent": "unbekannte Gewässer navigieren.",
+    "items": [
+      {
+        "t": "Interkulturelle Fachkräfte",
+        "d": "Karriere über Länder und Kulturen hinweg aufbauen — ohne Heimvorteil. Deep Dive zeigt, wie deine interkulturelle Identität deine Karrierestärken formt — damit du sie nicht als Lücke siehst, sondern als Vorteil nutzt."
+      },
+      {
+        "t": "Menschen in der KI-Welle",
+        "d": "Wenn KI schreiben, gestalten, übersetzen und programmieren kann — was bleibt dann noch, das deins ist? Diese Frage ist keine Schwäche. Sie ist der Anfang von etwas Wichtigem. Deep Dive hilft dir zu finden, was KI nie ersetzen kann — woran dir wirklich liegt."
+      },
+      {
+        "t": "Karrierewechsler",
+        "d": "Du spürst den Drang nach etwas Neuem, bist aber unsicher, welche Richtung zum echten Du passt. Deep Dive identifiziert den roten Faden zwischen deinen bisherigen Rollen — und zeigt, wohin er führt."
+      },
+      {
+        "t": "Berufseinsteiger",
+        "d": "Unendliche Optionen, null Klarheit. Deep Dive schneidet durch den Lärm mit einem Profil, das auf deiner tatsächlichen Denk- und Entscheidungsweise basiert — nicht auf dem, was der Markt sagt."
+      }
+    ]
+  },
+  "science": {
+    "label": "METHODIK",
+    "heading": "Rigorose Psychologie.",
+    "headingAccent": "Einfühlsame Erfahrung.",
+    "stats": [
+      {
+        "l": "Frameworks",
+        "v": "5"
+      },
+      {
+        "l": "Archetypen",
+        "v": "12"
+      },
+      {
+        "l": "Fragen",
+        "v": "124"
+      }
+    ],
+    "foundations": "Basiert auf O*NET Interest Profiler · IPIP · Schwartz Values · Big Five",
+    "academic": "Akademische Forschung an der Universität Amsterdam — Thesis-Niveau Gründlichkeit, Produktqualität Erfahrung.",
+    "credibility": [
+      "Basiert auf validierten Instrumenten der weltweiten Karriereforschung — keine Persönlichkeitsquizze aus einem Blogpost.",
+      "Wir teilen deine Daten nicht. Lösche alles mit einem Klick, jederzeit."
+    ],
+    "affiliation": "Forschung an der Universität von Amsterdam"
+  },
+  "privacy": {
+    "quote": "Was du hier teilst,\nverlässt nie die Tiefe.",
+    "desc": "Echte Selbsterkundung braucht echte Privatsphäre. Deine Zweifel, Ambitionen und Widersprüche — hier sicher, und jederzeit von dir löschbar.",
+    "note": "Privacy-First Design · Vollständige Datenlöschung mit einem Klick",
+    "cta": "Deine Daten, deine Regeln"
+  },
+  "breathQuote": "Die richtige Karriere war nie etwas zu Findendes.\nDu musst nur dich selbst sehen.",
+  "glassCard": {
+    "label": "Deine Karriereidentität",
+    "title": "Der Synthesizer",
+    "subtitle": "Brücken bauen zwischen Ideen und Menschen",
+    "quote": "\"Du schaffst Bedeutung, indem du verbindest, was andere übersehen. Deine Stärke ist nicht, einen Weg zu wählen — sondern zu sehen, wie alle zusammenhängen.\""
+  },
+  "glimpse": "Ein Blick auf das, was du entdecken könntest",
+  "cta": {
+    "heading": "Deine innere Stimme wartet darauf,",
+    "headingAccent": "dass du langsamer wirst und zuhörst.",
+    "description": "Das Muster hinter deinen Karriereentscheidungen war schon immer da. Es braucht nur einen Namen.",
+    "button": "Mein Muster entdecken",
+    "buttonReturning": "Meine Reise fortsetzen",
+    "note": "Kostenlos starten · ~5 Minuten · Entdecke deinen Archetyp über 5 Psychologie-Frameworks",
+    "noteReturning": "Registriere dich, um deinen Deep Dive Bericht + KI-Coaching freizuschalten"
+  },
+  "footer": {
+    "tagline": "Menschenzentrierte KI — nach innen schauen, das Unersetzliche finden",
+    "motto": "Tauche Tief. Höre Deinen Akkord.",
+    "nav": [
+      "Deep Dive",
+      "Mein Profil"
+    ],
+    "trust": [
+      "Privacy-First Design",
+      "Lokale Architektur",
+      "Offene Psychologie"
+    ]
+  },
+  "panels": {
+    "journeyNote": "geschafft",
+    "privacyHeading": "Privat von Grund auf",
+    "trio": [
+      "Deine Reise gehört dir",
+      "Evidenzbasiert",
+      "Zum Nachdenken gemacht"
+    ],
+    "caps": {
+      "identityMap": "Identitätskarte",
+      "strengths": "Top-Stärken",
+      "values": "Grundwerte",
+      "realityFit": "Realitätsabgleich",
+      "directions": "Karriererichtungen",
+      "fitSignals": "Passungssignale",
+      "evidence": "Belegnotizen",
+      "nextStep": "Nächster Schritt",
+      "milestones": "Meilensteine",
+      "decisionClarity": "Entscheidungsklarheit",
+      "progress": "Fortschritt"
+    },
+    "coda": {
+      "line": "Tauche tiefer. Lebe klarer.",
+      "sub": "ein Ozean, zwei Stunden"
+    }
+  }
+}

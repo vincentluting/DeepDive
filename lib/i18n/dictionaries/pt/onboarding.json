@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "Bem-vindo(a)",
+    "subtitle": "Conte-nos um pouco sobre você",
+    "step1Title": "Qual é seu estágio de carreira?",
+    "step1Options": {},
+    "step2Title": "O que te traz aqui?",
+    "step2Options": {},
+    "startButton": "Começar",
+    "skipButton": "Pular por enquanto"
+  }
+}

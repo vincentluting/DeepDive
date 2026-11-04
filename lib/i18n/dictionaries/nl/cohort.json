@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "Onderzoeksreis",
+    "journeySubtitle": "Voltooi elke stap in volgorde om bij te dragen aan ons onderzoek.",
+    "progressLabel": "{percent}% voltooid",
+    "steps": {
+      "pre_assessment": "Vragenlijst vooraf",
+      "quick_dive": "Quick Dive Verkenning",
+      "deep_dive": "Deep Dive-assessment",
+      "post_immediate": "Vragenlijst achteraf",
+      "post_1week": "Vervolgvragenlijst (1 week)",
+      "coaching": "AI Loopbaancoaching"
+    },
+    "status": {
+      "completed": "Voltooid",
+      "current": "Nu beginnen",
+      "locked": "Vergrendeld",
+      "available": "Beschikbaar"
+    },
+    "gateMessage": "Vul eerst de vragenlijst vooraf in voordat u met uw verkenning begint.",
+    "post1weekNotYet": "Beschikbaar 7 dagen na uw vragenlijst achteraf.",
+    "allComplete": "Bedankt! U heeft alle onderzoeksstappen voltooid."
+  }
+}

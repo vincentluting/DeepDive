@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "Welkom",
+    "subtitle": "Vertel ons iets over jezelf",
+    "step1Title": "In welke fase van je loopbaan zit je?",
+    "step1Options": {},
+    "step2Title": "Wat brengt je hier?",
+    "step2Options": {},
+    "startButton": "Aan de slag",
+    "skipButton": "Voorlopig overslaan"
+  }
+}

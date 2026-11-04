@@ -1,0 +1,179 @@
+# ============================================================
+# Deep Dive — CI Pipeline
+#
+# Three parallel jobs for fast feedback:
+#   lint (tsc + eslint + i18n + architecture) ≈ 1.5 min
+#   test (vitest + coverage)                  ≈ 2.5 min
+#   build (production compile)                ≈ 2-4 min
+#   e2e  (playwright, PR only)                ≈ 5-10 min
+#
+# Total wall time: ~5 min on push, ~10-12 min on PR.
+# ============================================================
+
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Job 1: Static Analysis ──
+  lint:
+    name: Lint & Type Check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript type check
+        run: npx tsc --noEmit
+
+      - name: ESLint
+        run: npm run lint
+
+      - name: i18n key sync + hardcoded string check
+        run: npm run lint:i18n
+
+      - name: Check LLM client import discipline
+        run: bash scripts/check-llm-imports.sh
+
+      # Run check-env in --strict mode with CI placeholder env. This catches:
+      #   - check-env.ts script itself crashing (logic regression)
+      #   - new REQUIRED env vars added without CI placeholder updates
+      #   - shell-override detection logic regressing (would only fire if CI
+      #     somehow leaks empty-string env, but the safety net is cheap)
+      # The build job also runs check-env via prebuild — this is the explicit
+      # CI-visible step so a failure surfaces here without forcing build wait.
+      - name: LLM/env config check (strict)
+        run: npm run check:env:strict
+        env:
+          POSTGRES_URL: postgresql://ci:ci@127.0.0.1:5432/deepdive_ci
+          AUTH_SECRET: ci-build-secret-at-least-32-chars-long
+          OPENAI_API_KEY: sk-ci-placeholder-key-at-least-twenty-chars
+          GOOGLE_CLIENT_ID: ci-build.apps.googleusercontent.com
+          GOOGLE_CLIENT_SECRET: ci-build-secret
+
+  # ── Job 2: Unit Tests (runs in parallel with lint) ──
+  test:
+    name: Unit Tests & Coverage
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Vitest
+        run: npm run test
+
+      - name: Coverage check (critical paths)
+        run: npm run test:coverage
+
+      - name: Verify thesis data completeness
+        if: env.POSTGRES_URL != ''
+        run: npm run verify:thesis
+        env:
+          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
+
+  # ── Job 3: Production Build (must compile without external font fetches) ──
+  build:
+    name: Production Build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Production build
+        run: npm run build
+        env:
+          CI: true
+          # GH ubuntu-24.04 runners have ~7GB RAM; Next 16 webpack build for this
+          # codebase OOMs at the v8 default (~1.5GB). Raise to 6GB to unblock.
+          # Root cause: 540+ files + RSC build + SWC chain. Observed failure 2026-04-16.
+          NODE_OPTIONS: --max-old-space-size=6144
+          POSTGRES_URL: postgresql://ci:ci@127.0.0.1:5432/deepdive_ci
+          AUTH_SECRET: ci-build-secret-at-least-32-chars-long
+          OPENAI_API_KEY: sk-ci-placeholder
+          GOOGLE_CLIENT_ID: ci-build.apps.googleusercontent.com
+          GOOGLE_CLIENT_SECRET: ci-build-secret
+          NEXT_PUBLIC_APP_URL: http://127.0.0.1:3000
+
+  # ── Job 4: E2E (PR only, after static + build gates pass) ──
+  e2e:
+    name: E2E Smoke Tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    if: github.event_name == 'pull_request'
+    needs: [lint, build]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium
+
+      - name: Run E2E smoke tests
+        run: npm run test:e2e
+        env:
+          CI: true
+          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
+          AUTH_SECRET: ${{ secrets.AUTH_SECRET || 'e2e-test-secret-at-least-32-chars-long' }}
+
+      # ── Cleanup: delete test users to keep admin panel clean ──
+      - name: Cleanup test users
+        if: always()
+        run: |
+          if [ -n "$POSTGRES_URL" ]; then
+            curl -sf -X POST http://localhost:3000/api/test/cleanup \
+              -H "Content-Type: application/json" \
+              -d '{"all": true}' || echo "Cleanup skipped — server not running"
+          fi
+        env:
+          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}

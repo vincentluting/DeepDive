@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "Forschungsreise",
+    "journeySubtitle": "Schließen Sie jeden Schritt der Reihe nach ab, um unsere Forschung zu unterstützen.",
+    "progressLabel": "{percent}% abgeschlossen",
+    "steps": {
+      "pre_assessment": "Vor-Bewertungsumfrage",
+      "quick_dive": "Quick Dive Exploration",
+      "deep_dive": "Deep Dive Assessment",
+      "post_immediate": "Nach-Bewertungsumfrage",
+      "post_1week": "Folgeumfrage (1 Woche)",
+      "coaching": "KI-Karrierecoaching"
+    },
+    "status": {
+      "completed": "Abgeschlossen",
+      "current": "Jetzt starten",
+      "locked": "Gesperrt",
+      "available": "Verfügbar"
+    },
+    "gateMessage": "Bitte schließen Sie zuerst die Vor-Bewertungsumfrage ab, bevor Sie Ihre Exploration beginnen.",
+    "post1weekNotYet": "Verfügbar 7 Tage nach Ihrer Nach-Bewertung.",
+    "allComplete": "Vielen Dank! Sie haben alle Forschungsschritte abgeschlossen."
+  }
+}

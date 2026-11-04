@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "연구 여정",
+    "journeySubtitle": "연구에 도움이 되도록 각 단계를 순서대로 완료해 주세요.",
+    "progressLabel": "{percent}% 완료",
+    "steps": {
+      "pre_assessment": "사전 평가 설문",
+      "quick_dive": "Quick Dive 탐색",
+      "deep_dive": "Deep Dive 평가",
+      "post_immediate": "사후 평가 설문",
+      "post_1week": "후속 설문 (1주 후)",
+      "coaching": "AI 커리어 코칭"
+    },
+    "status": {
+      "completed": "완료됨",
+      "current": "지금 시작하기",
+      "locked": "잠김",
+      "available": "이용 가능"
+    },
+    "gateMessage": "탐색을 시작하기 전에 사전 평가 설문을 완료해 주세요.",
+    "post1weekNotYet": "사후 평가 7일 후 이용 가능합니다.",
+    "allComplete": "감사합니다! 모든 연구 단계를 완료했습니다."
+  }
+}

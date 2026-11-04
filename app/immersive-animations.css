@@ -1,0 +1,1175 @@
+/* ═══════════════════════════════════════════════════════════════
+   IMMERSIVE ANIMATIONS — Ocean / Deep-Sea themed keyframes & classes
+
+   Extracted from globals.css to reduce global CSS payload.
+   These animations are used exclusively by:
+   - Landing page hero (ocean canvas, bubble particles, silhouettes)
+   - Quick Dive open-water-reveal
+   - Deep Dive questionnaire (float-drift particles, module transitions)
+   - Report ocean reveal (drift, caustic shift)
+   - QuickExplore result (bio float, light rays)
+   - Coaching chat (bioluminescent indicators)
+
+   Imported in: immersive layout, marketing layout, app layout
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════
+   WATER / OCEAN EFFECTS
+   ═══════════════════════════════════════════ */
+
+@keyframes caustics {
+  0%,
+  100% {
+    opacity: 0.015;
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    opacity: 0.03;
+    transform: scale(1.01) rotate(0.5deg);
+  }
+  50% {
+    opacity: 0.02;
+    transform: scale(0.99) rotate(-0.5deg);
+  }
+  75% {
+    opacity: 0.025;
+    transform: scale(1.005) rotate(0.25deg);
+  }
+}
+
+.caustics-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='caustics'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.015' numOctaves='3' result='noise' seed='2'/%3E%3CfeDisplacementMap in2='noise' in='SourceGraphic' scale='30' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='rgba(255,255,255,0.02)' filter='url(%23caustics)'/%3E%3C/svg%3E");
+  animation: caustics 16s ease-in-out infinite;
+}
+
+/* Subtle caustics for light-mode report pages — very faint water texture */
+.caustics-overlay-subtle {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='caustics'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.015' numOctaves='3' result='noise' seed='2'/%3E%3CfeDisplacementMap in2='noise' in='SourceGraphic' scale='30' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='rgba(255,255,255,0.02)' filter='url(%23caustics)'/%3E%3C/svg%3E");
+  animation: caustics 12s ease-in-out infinite;
+}
+
+.dark .caustics-overlay-subtle {
+  opacity: 0;
+}
+
+/* Ocean-feel gradient border for report cards */
+.ocean-border-card {
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.ocean-border-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--card-border-gradient);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes lightRays {
+  0%,
+  100% {
+    opacity: 0.015;
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    opacity: 0.03;
+    transform: translateY(-3%) scaleY(1.01);
+  }
+}
+
+.light-rays {
+  background: repeating-linear-gradient(
+    105deg,
+    transparent 0px,
+    transparent 40px,
+    rgba(255, 255, 255, 0.008) 40px,
+    rgba(255, 255, 255, 0.015) 45px,
+    rgba(255, 255, 255, 0.008) 50px,
+    transparent 50px,
+    transparent 120px
+  );
+  animation: lightRays 10s ease-in-out infinite;
+}
+
+/* Bubble particles — barely visible, atmospheric only */
+@keyframes bubbleRise {
+  0% {
+    transform: translateY(100%) translateX(0) scale(0.3);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-10%) translateX(var(--bubble-drift, 20px)) scale(1);
+    opacity: 0;
+  }
+}
+
+.bubble-particle {
+  position: absolute;
+  width: var(--bubble-size, 4px);
+  height: var(--bubble-size, 4px);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.06)
+  );
+  animation: bubbleRise var(--bubble-duration, 8s) ease-in-out infinite;
+  animation-delay: var(--bubble-delay, 0s);
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════
+   HERO SILHOUETTE — RIASEC dimension particles
+   ═══════════════════════════════════════════ */
+
+@keyframes silhouetteParticleDrift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(var(--drift-x1, 8px), var(--drift-y1, -12px));
+  }
+  50% {
+    transform: translate(var(--drift-x2, -5px), var(--drift-y2, -18px));
+  }
+  75% {
+    transform: translate(var(--drift-x3, 10px), var(--drift-y3, -8px));
+  }
+}
+
+/* ═══════════════════════════════════════════
+   HERO AURORA — Multi-chromatic surface light
+   ═══════════════════════════════════════════ */
+
+@keyframes auroraShift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.06;
+  }
+  33% {
+    transform: translate(20px, -15px) scale(1.03);
+    opacity: 0.08;
+  }
+  66% {
+    transform: translate(-15px, 10px) scale(0.97);
+    opacity: 0.05;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   QUICKEXPLORE — Ocean-themed animations
+   ═══════════════════════════════════════════ */
+
+@keyframes qdLightRaysPulse {
+  0% {
+    opacity: 0.06;
+  }
+  50% {
+    opacity: 0.14;
+  }
+  100% {
+    opacity: 0.06;
+  }
+}
+
+@keyframes qdCausticsShift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-3%, 2%) scale(1.03);
+  }
+  66% {
+    transform: translate(2%, -1%) scale(0.97);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes qdBioFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(15px, -10px) scale(1.08);
+  }
+  50% {
+    transform: translate(-10px, 5px) scale(0.95);
+  }
+  75% {
+    transform: translate(8px, 12px) scale(1.03);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   QUESTIONNAIRE — Float drift particles
+   ═══════════════════════════════════════════ */
+
+@keyframes float-drift {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: var(--tw-opacity, 0.03);
+  }
+  25% {
+    transform: translateY(-8vh) translateX(3px);
+  }
+  50% {
+    transform: translateY(-16vh) translateX(-2px);
+    opacity: calc(var(--tw-opacity, 0.03) * 2);
+  }
+  75% {
+    transform: translateY(-24vh) translateX(4px);
+  }
+  100% {
+    transform: translateY(-32vh) translateX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(66, 198, 255, 0.15);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 40px rgba(66, 198, 255, 0.25);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   COACHING — Bioluminescent ocean effects
+   ═══════════════════════════════════════════ */
+
+/* Chat typing indicator — bioluminescent pulse */
+@keyframes biolumPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.coaching-typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+}
+
+.coaching-typing-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow:
+    0 0 8px var(--primary),
+    0 0 16px rgba(66, 198, 255, 0.3);
+  animation: biolumPulse 1.8s ease-in-out infinite;
+}
+
+.coaching-typing-dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.coaching-typing-dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coaching-typing-dot {
+    animation: none;
+    opacity: 0.6;
+    transform: none;
+  }
+}
+
+/* Coach avatar breathing animation */
+@keyframes coachAvatarBreathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.coach-avatar-breathe {
+  animation: coachAvatarBreathe 4s ease-in-out infinite;
+}
+
+/* Coach message slide-in */
+@keyframes coachMsgIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.coach-msg-enter {
+  animation: coachMsgIn 350ms var(--ease-out-quint) forwards;
+}
+
+/* Streaming cursor — blinking line at end of assistant message */
+.coaching-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  background: var(--primary);
+  border-radius: 1px;
+  animation: cursorBlink 1s steps(2) infinite;
+}
+@keyframes cursorBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Bioluminescent wave — premium "AI thinking" indicator */
+@keyframes bioluminescent {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scaleX(0.9);
+    filter: blur(1px);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scaleX(1);
+    filter: blur(0px);
+  }
+}
+
+.coaching-bioluminescent {
+  width: 48px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  animation: bioluminescent 2.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coaching-bioluminescent {
+    animation: none;
+    opacity: 0.6;
+  }
+}
+
+/* Deep sea background texture for coaching chat messages area */
+.coaching-chat-bg {
+  position: relative;
+}
+
+.coaching-chat-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.015;
+  background-image:
+    radial-gradient(
+      ellipse 300px 200px at 30% 70%,
+      rgba(66, 198, 255, 0.3) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 200px 300px at 70% 30%,
+      rgba(45, 212, 191, 0.2) 0%,
+      transparent 70%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dark .coaching-chat-bg::before {
+  opacity: 0.025;
+}
+
+/* Topic suggestion pill glow on hover */
+.topic-pill {
+  transition: all 200ms ease-out;
+}
+.topic-pill:hover {
+  box-shadow:
+    0 0 0 1px rgba(var(--primary-rgb), 0.15),
+    0 2px 8px rgba(var(--primary-rgb), 0.1);
+}
+
+/* ═══════════════════════════════════════════
+   OCEAN REVEAL — Report header animations
+   Used by components/report/ocean-reveal.tsx
+   and components/report/report-header.tsx
+   ═══════════════════════════════════════════ */
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translate(12px, -22px) scale(1.08);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate(-8px, -45px) scale(0.92);
+    opacity: 0.2;
+  }
+  75% {
+    transform: translate(16px, -28px) scale(1.12);
+    opacity: 0.4;
+  }
+}
+
+@keyframes gentleRise {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes causticShift {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1) translateX(0);
+  }
+  33% {
+    opacity: 0.9;
+    transform: scale(1.04) translateX(1.5%);
+  }
+  66% {
+    opacity: 0.7;
+    transform: scale(0.97) translateX(-1%);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.22;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+/* Reduce motion — disable ocean particles and ambient effects */
+@media (prefers-reduced-motion: reduce) {
+  .ocean-particle {
+    animation: none !important;
+  }
+}
+
+/* Landing page — Bottom CTA starry background */
+@keyframes twinkle {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-star {
+    animation: none !important;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   OCEAN CANVAS — Physics-based Light System (A.html hero)
+   ═══════════════════════════════════════════ */
+
+.ocean-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: #011222;
+}
+
+/* Layer 1: Deep Base */
+.ocean-base {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #126e94 0%,
+    #0e6386 10%,
+    #0a5270 25%,
+    #063f56 45%,
+    #042e40 65%,
+    #021e2c 85%,
+    #011222 100%
+  );
+  z-index: 1;
+}
+
+/* Layer 2: Dither Noise (Prevents Color Banding) */
+.dither-noise {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  pointer-events: none;
+}
+
+/* Layer 3: Blur-based Light Source */
+.light-system {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.light-pool {
+  position: absolute;
+  top: -30%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: #4fb4d8;
+  border-radius: 50%;
+  filter: blur(180px);
+  opacity: 0.4;
+  mix-blend-mode: screen;
+  animation: poolDrift 20s ease-in-out infinite alternate;
+}
+
+.light-core {
+  position: absolute;
+  top: -20%;
+  left: 35%;
+  width: 30%;
+  height: 40%;
+  background: #ffffff;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+
+.light-warmth {
+  position: absolute;
+  top: -15%;
+  left: 40%;
+  width: 25%;
+  height: 35%;
+  background: #ffd8a8;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+  animation: warmthPulse 8s ease-in-out infinite;
+}
+
+@keyframes poolDrift {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(5%);
+  }
+}
+
+@keyframes warmthPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+}
+
+/* Layer 4: Caustics (Water Surface Ripples) */
+.oc-caustics {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 20%,
+    transparent 60%
+  );
+  mask-image: linear-gradient(to bottom, black 0%, black 20%, transparent 60%);
+}
+
+.caustic-layer {
+  position: absolute;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background-size: cover;
+  will-change: transform;
+}
+
+.caustic-a {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='ca'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.01' numOctaves='3' seed='5' result='noise'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='noise' scale='40'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='white' opacity='0.3' filter='url(%23ca)'/%3E%3C/svg%3E");
+  opacity: 0.4;
+  animation: causticMove 25s linear infinite;
+}
+
+.caustic-b {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='cb'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.005' numOctaves='3' seed='2' result='noise'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='noise' scale='60'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='white' opacity='0.2' filter='url(%23cb)'/%3E%3C/svg%3E");
+  opacity: 0.3;
+  animation: causticMove 40s linear infinite reverse;
+  transform: rotate(5deg);
+}
+
+@keyframes causticMove {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(-50px) rotate(2deg);
+  }
+}
+
+/* Layer 5: Volumetric God Rays */
+.god-rays {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.oc-ray {
+  position: absolute;
+  top: -20%;
+  height: 120%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(200, 240, 255, 0.05) 30%,
+    transparent 80%
+  );
+  transform-origin: top center;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 40%,
+    black 60%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 40%,
+    black 60%,
+    transparent
+  );
+}
+
+.oc-ray-1 {
+  left: 30%;
+  width: 15vw;
+  transform: rotate(-15deg);
+  animation: raySway 12s ease-in-out infinite;
+  --r: -15deg;
+}
+.oc-ray-2 {
+  left: 50%;
+  width: 20vw;
+  transform: rotate(-5deg);
+  animation: raySway 18s ease-in-out infinite reverse;
+  opacity: 0.7;
+  --r: -5deg;
+}
+.oc-ray-3 {
+  left: 70%;
+  width: 10vw;
+  transform: rotate(10deg);
+  animation: raySway 15s ease-in-out infinite 2s;
+  opacity: 0.5;
+  --r: 10deg;
+}
+.oc-ray-4 {
+  display: none;
+}
+.oc-ray-5 {
+  display: none;
+}
+
+@keyframes raySway {
+  0%,
+  100% {
+    transform: rotate(var(--r, -5deg)) translateX(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(calc(var(--r, -5deg) + 2deg)) translateX(10px);
+    opacity: 0.5;
+  }
+}
+
+/* Layer 6: Vignette */
+.oc-vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 30%,
+    transparent 40%,
+    rgba(1, 15, 25, 0.6) 90%
+  );
+}
+
+/* Open Water Reveal — floating light particles */
+.ow-particle {
+  animation-name: owParticleFloat;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes owParticleFloat {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.65;
+  }
+  92% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(8px);
+    opacity: 0;
+  }
+}
+
+/* Glass Card — A.html hero card */
+.glass-card {
+  position: relative;
+  width: 300px;
+  padding: 28px;
+  background: linear-gradient(
+    160deg,
+    rgba(20, 40, 60, 0.6) 0%,
+    rgba(10, 20, 30, 0.8) 100%
+  );
+  backdrop-filter: blur(24px) saturate(120%);
+  -webkit-backdrop-filter: blur(24px) saturate(120%);
+  border-radius: 24px;
+  border: 1px solid rgba(100, 200, 255, 0.15);
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  animation: floatCard 8s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0) rotateX(2deg);
+  }
+  50% {
+    transform: translateY(-15px) rotateX(-2deg);
+  }
+}
+
+@keyframes floatGentleMobile {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.glass-card-mobile {
+  animation: floatGentleMobile 5s ease-in-out infinite;
+}
+
+.gc-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.gc-icon {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #7ce;
+  border: 1px solid rgba(119, 204, 238, 0.2);
+}
+.gc-meta-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+.gc-meta-sub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.gc-arch-title {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.gc-arch-name {
+  font-size: 22px;
+  margin-bottom: 4px;
+  background: linear-gradient(135deg, #e0f7ff, #7dd3fc, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+.gc-arch-sub {
+  font-size: 11px;
+  color: rgba(120, 220, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gc-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.gc-stat-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gc-stat-dot {
+  width: 6px;
+  height: 6px;
+  background: #4af;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #4af;
+}
+.gc-stat-val {
+  font-weight: 700;
+  color: #7ce;
+  font-size: 13px;
+}
+
+/* Hero CTA — white/light gradient (A.html) */
+.cta-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #fff, #e0f2f7);
+  color: #022030;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 100px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  text-decoration: none;
+}
+.cta-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(79, 180, 216, 0.25);
+}
+.cta-hero:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Hero badge — cool ocean (A.html) */
+.hero-badge-v2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(200, 240, 255, 0.9);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: #4ff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #4ff;
+}
+
+/* Hero title highlight — cool gradient (A.html) */
+.title-hl {
+  background: linear-gradient(120deg, #e0f7ff, #8ed8f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scroll hint v2 — vertical centered, curiosity-gap micro-interaction */
+.scroll-hint-v2 {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: none;
+  letter-spacing: 0.3px;
+  animation: fadeIn 1s 1.5s both;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+.scroll-hint-v2:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.scroll-hint-v2:hover .scroll-particle {
+  box-shadow:
+    0 0 10px rgba(14, 165, 233, 0.8),
+    0 0 18px rgba(14, 165, 233, 0.4);
+}
+.scroll-line-container {
+  position: relative;
+  width: 1px;
+  height: 48px;
+}
+.scroll-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+}
+.scroll-particle {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  box-shadow:
+    0 0 8px rgba(14, 165, 233, 0.6),
+    0 0 14px rgba(14, 165, 233, 0.3);
+  animation: descend-particle 3s ease-in-out infinite;
+  transition: box-shadow 0.3s ease;
+}
+@keyframes descend-particle {
+  0% {
+    top: -2px;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 46px;
+    opacity: 0;
+  }
+}
+
+/* Responsive — hero layout */
+@media (max-width: 900px) {
+  .hero-layout-v2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .hero-layout-v2 .cta-group-v2 {
+    align-items: center;
+  }
+  .hero-copy-v2 {
+    max-width: 100%;
+  }
+  .glass-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  /* Hide complex light layers on mobile — blur edges and animations
+     are visible on small screens, creating distracting bands */
+  .light-system,
+  .god-rays,
+  .oc-caustics {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .light-pool,
+  .light-warmth,
+  .caustic-a,
+  .caustic-b,
+  .oc-ray-1,
+  .oc-ray-2,
+  .oc-ray-3,
+  .oc-ray-4,
+  .oc-ray-5,
+  .ow-particle,
+  .glass-card,
+  .glass-card-mobile,
+  .scroll-hint-v2,
+  .scroll-particle {
+    animation: none !important;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   MODULE DEPTH FLASH — questionnaire module transition
+   Full-screen cinematic depth overlay (auto-dismisses 2s)
+   ═══════════════════════════════════════════ */
+
+@keyframes depthTransition {
+  0% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  30% {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  70% {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  100% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+}
+
+@keyframes badgePulseHalo {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0px rgba(14, 165, 233, 0),
+      0 0 0px rgba(14, 165, 233, 0);
+  }
+  50% {
+    box-shadow:
+      0 0 12px rgba(14, 165, 233, 0.5),
+      0 0 24px rgba(14, 165, 233, 0.2);
+  }
+}
+
+.badge-pulse-halo {
+  animation: badgePulseHalo 2.5s ease-in-out infinite;
+}
+
+/* Immersive Dive answer feedback.
+   On phones the toast lives near the top and stays compact so it does not
+   visually cover the Likert buttons. Desktop keeps the cinematic full text. */
+.immersive-mirror-toast {
+  top: max(76px, calc(env(safe-area-inset-top, 0px) + 64px));
+  bottom: auto;
+  max-height: min(22dvh, 136px);
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .immersive-mirror-toast {
+    top: auto;
+    bottom: max(20px, env(safe-area-inset-bottom, 20px));
+    max-height: none;
+    overflow: visible;
+  }
+}

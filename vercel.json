@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- app/ components/ lib/ scripts/ public/ next.config.mjs package.json package-lock.json tsconfig.json vercel.json proxy.ts",
+  "routes": [
+    {
+      "src": ".*\\.(php|asp|aspx|jsp|cgi|env|git)$",
+      "mitigate": {
+        "action": "deny"
+      }
+    },
+    {
+      "src": ".*(wp-admin|wp-login|wp-content|xmlrpc|phpinfo|phpmyadmin|adminer|config\\.bak).*",
+      "mitigate": {
+        "action": "deny"
+      }
+    },
+    {
+      "src": "/api/(.*)",
+      "missing": [
+        {
+          "type": "header",
+          "key": "user-agent"
+        }
+      ],
+      "mitigate": {
+        "action": "deny"
+      }
+    }
+  ]
+}

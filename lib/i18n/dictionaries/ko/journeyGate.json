@@ -1,0 +1,60 @@
+{
+  "journeyGate": {
+    "steps": {
+      "quickDive": "Quick Dive",
+      "deepDive": "Deep Dive",
+      "profile": "Personal Profile",
+      "report": "Career Report",
+      "actionHub": "Action Hub",
+      "coaching": "AI Coach"
+    },
+    "stepIndicator": "Step {{n}} of {{total}}",
+    "stepAriaLabel": "Step {{n}} of {{total}}: {{label}}, {{status}}",
+    "stepStatus": {
+      "done": "done",
+      "blocked": "current step",
+      "pending": "pending"
+    },
+    "nav": {
+      "locked": "Locked"
+    },
+    "actionHub": {
+      "title": "Generate your Career Report first",
+      "body": "Your Action Hub is woven from your Career Report — without it there's nothing personal to act on yet. Generate the report from your profile, then come back to find your tailored plan.",
+      "primaryCta": "Go to Profile to generate report",
+      "secondaryCta": "Back to Profile"
+    },
+    "companionsCohort": {
+      "title": "Companions are part of a separate cohort",
+      "body": "Your current invite tier doesn't include Companions. Settings lists every cohort you belong to — switch or upgrade there, and Companions will appear next time you check.",
+      "primaryCta": "Open Settings"
+    },
+    "companionsOptIn": {
+      "title": "Turn on Companions in Settings",
+      "body": "Companions is opt-in. Enable it once and your matches, requests, and conversations will live here.",
+      "primaryCta": "Enable Companions"
+    },
+    "companionsProfile": {
+      "title": "Create your Companion card",
+      "body": "Companions matches on a short profile you control — value anchors, what you're up for, and how to reach you. Make yours in Settings and the discovery board fills in instantly.",
+      "primaryCta": "Set up Companion profile"
+    },
+    "deepDive": {
+      "title": "Complete Quick Dive first",
+      "body": "Deep Dive builds on the patterns Quick Dive measures. A 5–7 minute Quick Dive is enough to unlock the full 86-question Deep Dive.",
+      "primaryCta": "Start Quick Dive",
+      "secondaryCta": "Back to Explore"
+    },
+    "postAssessment": {
+      "title": "Check back on {{availableOn}}",
+      "body": "This follow-up survey opens seven days after your first post-assessment (T1), so we can measure change over a meaningful interval. Come back on the date above.",
+      "meta": "Opens {{availableOn}}",
+      "primaryCta": "Back to dashboard"
+    },
+    "pipeline": {
+      "title": "Your last Deep Dive didn't finish",
+      "body": "Your assessment pipeline failed before your profile was ready. We've kept your answers — head to the dashboard and tap Retry. If it keeps failing, email deepdivecareer@outlook.com — we read every message.",
+      "primaryCta": "Retry from dashboard"
+    }
+  }
+}

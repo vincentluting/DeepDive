@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "Bienvenue",
+    "subtitle": "Parle-nous un peu de toi",
+    "step1Title": "Quelle est ta situation professionnelle ?",
+    "step1Options": {},
+    "step2Title": "Qu'est-ce qui t'amène ici ?",
+    "step2Options": {},
+    "startButton": "C'est parti",
+    "skipButton": "Passer pour l'instant"
+  }
+}

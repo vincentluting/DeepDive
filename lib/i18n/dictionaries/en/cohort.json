@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "Research Journey",
+    "journeySubtitle": "Complete each step in order to help with our research.",
+    "progressLabel": "{percent}% complete",
+    "steps": {
+      "pre_assessment": "Pre-Assessment Survey",
+      "quick_dive": "Quick Dive Exploration",
+      "deep_dive": "Deep Dive Assessment",
+      "coaching": "AI Career Coaching",
+      "post_immediate": "Post-Assessment Survey",
+      "post_1week": "Follow-Up Survey (1 week)"
+    },
+    "status": {
+      "completed": "Completed",
+      "current": "Start now",
+      "locked": "Locked",
+      "available": "Available"
+    },
+    "gateMessage": "Please complete the pre-assessment survey before starting your exploration.",
+    "post1weekNotYet": "Available 7 days after your post-assessment.",
+    "allComplete": "Thank you! You've completed all research steps."
+  }
+}

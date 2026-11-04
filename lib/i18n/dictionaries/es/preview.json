@@ -1,0 +1,326 @@
+{
+  "hero": {
+    "badge": "Plataforma de Exploración Profesional con IA Centrada en el Humano",
+    "heading": "Encuentra el trabajo que se siente como tú.",
+    "headingAccent": "",
+    "subtitle": "Primero, para. Y escúchate.",
+    "cta": "Empieza a Mirar hacia Dentro",
+    "ctaNote": "Gratis · 3–5 min · 38 preguntas · Resultados instantáneos",
+    "ctaNoSignup": "No necesitas registrarte para empezar",
+    "ctaReturning": "Ver mis resultados",
+    "ctaReturningNote": "Bienvenido de nuevo · Regístrate para desbloquear tu perfil completo",
+    "trustPillars": [
+      "Ciencia rigurosa",
+      "IA cálida",
+      "Mirar hacia dentro",
+      "Para todos"
+    ],
+    "firstDescentRitual": "5 minutos, hasta el primer espejo →",
+    "ritualLink": "Cinco minutos hasta tu primer espejo"
+  },
+  "showcase": {
+    "meter": [
+      "Superficie",
+      "Claridad",
+      "Dirección",
+      "Descubrimiento"
+    ],
+    "railLabel": "Navegación de profundidad",
+    "depthChoice": {
+      "title": "Elige tu profundidad",
+      "desc": "Elige la experiencia que encaja con tu momento."
+    },
+    "stats": [
+      {
+        "value": "38",
+        "label": "preguntas · ~5 min"
+      },
+      {
+        "value": "12",
+        "label": "arquetipos profesionales"
+      },
+      {
+        "value": "5",
+        "label": "marcos psicológicos"
+      }
+    ],
+    "depthCards": [
+      {
+        "t": "Quick Dive",
+        "d": "Activa una primera intuición y traza tu radar de intereses.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "Una exploración más rica para patrones y direcciones más claros.",
+        "tm": "~30–40 min"
+      },
+      {
+        "t": "Immersive Dive",
+        "d": "Un recorrido guiado hacia una claridad completa.",
+        "tm": "~60+ min"
+      }
+    ],
+    "entryCard": {
+      "t": "Empieza aquí",
+      "d": "Cinco minutos bajo la superficie: tu primer espejo."
+    },
+    "returningCard": {
+      "t": "Continúa tu inmersión",
+      "d": "Retoma donde lo dejaste."
+    },
+    "instruments": {
+      "reportChapters": [
+        "Anclas de carrera",
+        "Tu paisaje",
+        "El lado de sombra",
+        "Una carta para ti",
+        "Metodología"
+      ],
+      "tools": [
+        "Pulido del CV",
+        "Carta de presentación",
+        "Preparación de entrevistas",
+        "Discurso de ascensor",
+        "Reescritura de LinkedIn",
+        "Rompehielos de networking",
+        "Plan de acción"
+      ],
+      "coach": {
+        "context": "El coach ha leído tu perfil de evaluación",
+        "user": "¿Por qué siempre dejo los trabajos a los dos años?",
+        "reply": "Tu mapa de valores muestra que la autonomía pesa más que la estabilidad: tu patrón no es inquietud, es la búsqueda de espacio para construir."
+      }
+    },
+    "portrait": {
+      "title": "Tu perfil de intereses",
+      "dims": [
+        "Construir",
+        "Investigar",
+        "Crear",
+        "Conectar",
+        "Liderar",
+        "Organizar"
+      ]
+    }
+  },
+  "story": {
+    "storyBefore": "Creamos esto porque nosotros también estábamos perdidos —\nviendo cómo la IA hacía lo que tardamos años en aprender,\npreguntándonos si todavía importábamos.",
+    "storyHighlight": "Entonces nos dimos cuenta: la respuesta nunca estuvo ahí fuera. Siempre estuvo aquí dentro.",
+    "storyAfter": "Esta herramienta es un regalo que nos hicimos a nosotros mismos, y ahora a ti."
+  },
+  "journey": {
+    "label": "TU VIAJE",
+    "heading": "Del autoconocimiento",
+    "headingAccent": "a la acción profesional.",
+    "items": [
+      {
+        "t": "Quick Dive",
+        "d": "38 preguntas sobre intereses profesionales, unos 5 minutos. Mapea tu perfil RIASEC y descubre qué direcciones te energizan más.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "86 preguntas basadas en escenarios sobre personalidad, valores y estilo cognitivo. No son casillas — son dilemas reales que revelan lo que tu currículum nunca muestra.",
+        "tm": "~20 min"
+      },
+      {
+        "t": "Tu Retrato",
+        "d": "Tu perfil psicológico — revelado al instante. Arquetipo profesional, dimensiones de personalidad, estilo cognitivo, lado sombra. Un espejo que muestra quién eres realmente, no lo que dice tu currículum.",
+        "tm": "Instantáneo"
+      },
+      {
+        "t": "Tu Mapa",
+        "d": "Informe profesional generado por IA: anclas de carrera, mejores coincidencias, rutas de crecimiento y puntos ciegos. No consejos genéricos — un mapa trazado desde tu patrón único.",
+        "tm": "Creado por IA"
+      },
+      {
+        "t": "Coach + Acción",
+        "d": "No es un chatbot. Un coach que lee el contexto de tu evaluación: tus valores, tensiones y direcciones profesionales. Además, un plan de acción personalizado que convierte la reflexión en próximos pasos concretos.",
+        "tm": "Continuo"
+      }
+    ]
+  },
+  "features": {
+    "label": "QUE OBTENDRAS",
+    "heading": "Un espejo,",
+    "headingAccent": "luego un mapa.",
+    "items": [
+      {
+        "t": "Informe de Exploración Profesional",
+        "d": "Un retrato profesional completo trazado desde tu patrón único."
+      },
+      {
+        "t": "Action Hub",
+        "d": "Convierte la claridad en acción intencional y progreso medible."
+      },
+      {
+        "t": "AI Coach",
+        "d": "Tu compañero privado de reflexión para una claridad más profunda."
+      },
+      {
+        "t": "Perfil Personal",
+        "d": "Tu perfil psicológico, revelado al instante."
+      }
+    ]
+  },
+  "archetypes": {
+    "label": "12 ARQUETIPOS PROFESIONALES",
+    "hoverCaption": "Uno de estos eres tú",
+    "heading": "No son etiquetas.",
+    "headingAccent": "Son retratos.",
+    "description": "Cada arquetipo conecta dos dimensiones de interés con una identidad profesional — con sus propias fortalezas, áreas de crecimiento y direcciones de carrera. Verás qué roles encajan naturalmente, cuáles te agotan, y por qué tus decisiones pasadas tienen más sentido del que creías.",
+    "items": [
+      {
+        "name": "El Constructor",
+        "sub": "Creación práctica"
+      },
+      {
+        "name": "El Analista",
+        "sub": "Reconocimiento de patrones"
+      },
+      {
+        "name": "El Virtuoso",
+        "sub": "Visión estética"
+      },
+      {
+        "name": "El Coach",
+        "sub": "Potencial humano"
+      },
+      {
+        "name": "El Inconformista",
+        "sub": "Disrupción audaz"
+      },
+      {
+        "name": "El Arquitecto",
+        "sub": "Pensamiento sistémico"
+      }
+    ],
+    "moreNote": "+ 6 arquetipos más por descubrir",
+    "marquee": [
+      "El Constructor",
+      "El Científico",
+      "El Analista",
+      "El Virtuoso",
+      "El Sanador",
+      "El Coach",
+      "El Inconformista",
+      "El Arquitecto",
+      "El Pionero",
+      "El Visionario",
+      "El Defensor",
+      "El Principal"
+    ]
+  },
+  "whoFor": {
+    "label": "PARA QUIÉN",
+    "heading": "Creado para quienes navegan",
+    "headingAccent": "aguas desconocidas.",
+    "items": [
+      {
+        "t": "Profesionales Interculturales",
+        "d": "Construir una carrera entre países y culturas sin ventaja de local. Deep Dive mapea cómo tu identidad intercultural configura tus fortalezas profesionales — para que dejes de verla como una carencia y empieces a usarla como ventaja."
+      },
+      {
+        "t": "Personas Buscándose en la Ola de la IA",
+        "d": "Cuando la IA puede escribir, diseñar, traducir y programar — ¿qué queda que sea tuyo? Esa pregunta no es debilidad. Es el comienzo de algo importante. Deep Dive te ayuda a encontrar lo que la IA nunca podrá reemplazar — lo que realmente te importa."
+      },
+      {
+        "t": "En Transición Profesional",
+        "d": "Sientes la llamada hacia algo nuevo pero no sabes qué dirección encaja con el verdadero tú. Deep Dive identifica el hilo conductor entre tus roles anteriores — y señala hacia dónde lleva."
+      },
+      {
+        "t": "Recién Graduados",
+        "d": "Opciones infinitas, cero claridad. Deep Dive corta el ruido con un perfil basado en cómo realmente piensas y decides — no en lo que el mercado dice que deberías querer."
+      }
+    ]
+  },
+  "science": {
+    "label": "METODOLOGÍA",
+    "heading": "Psicología rigurosa.",
+    "headingAccent": "Experiencia cálida.",
+    "stats": [
+      {
+        "l": "Marcos teóricos",
+        "v": "5"
+      },
+      {
+        "l": "Arquetipos",
+        "v": "12"
+      },
+      {
+        "l": "Preguntas",
+        "v": "124"
+      }
+    ],
+    "foundations": "Construido sobre O*NET Interest Profiler · IPIP · Schwartz Values · Big Five",
+    "academic": "Investigación académica en la Universidad de Ámsterdam — rigor de tesis, calidad de producto.",
+    "credibility": [
+      "Basado en instrumentos validados usados en investigación de orientación profesional en todo el mundo — no tests de personalidad de un blog.",
+      "No compartimos tus datos. Elimina todo con un clic, en cualquier momento."
+    ],
+    "affiliation": "Investigación de la Universidad de Ámsterdam"
+  },
+  "privacy": {
+    "quote": "Lo que compartes aquí\nnunca sale de las profundidades.",
+    "desc": "La exploración auténtica de uno mismo requiere privacidad real. Tus dudas, ambiciones y contradicciones — seguras aquí, y siempre tuyas para eliminar.",
+    "note": "Diseño privacy-first · Eliminación completa con un clic",
+    "cta": "Tus datos, tus reglas"
+  },
+  "breathQuote": "La carrera correcta nunca fue algo por encontrar.\nSolo necesitas verte a ti mismo.",
+  "glassCard": {
+    "label": "Tu Identidad Profesional",
+    "title": "El Sintetizador",
+    "subtitle": "Creando puentes entre ideas y personas",
+    "quote": "\"Creas significado conectando lo que otros pasan por alto. Tu fuerza no es elegir un camino — es ver cómo todos se conectan.\""
+  },
+  "glimpse": "Un vistazo a lo que podrías descubrir",
+  "cta": {
+    "heading": "Tu voz interior lleva esperando",
+    "headingAccent": "a que frenes y escuches.",
+    "description": "El patrón detrás de tus decisiones profesionales siempre estuvo ahí. Solo necesita un nombre.",
+    "button": "Descubrir Mi Patrón",
+    "buttonReturning": "Continuar Mi Viaje",
+    "note": "Empieza gratis · ~5 minutos · Descubre tu arquetipo a través de 5 marcos psicológicos",
+    "noteReturning": "Regístrate para desbloquear tu informe Deep Dive + coaching con IA"
+  },
+  "footer": {
+    "tagline": "IA centrada en el humano — mira hacia dentro, encuentra lo irremplazable",
+    "motto": "Sumérgete. Escucha Tu Acorde.",
+    "nav": [
+      "Deep Dive",
+      "Mi Perfil"
+    ],
+    "trust": [
+      "Diseño privacy-first",
+      "Arquitectura local-first",
+      "Psicología abierta"
+    ]
+  },
+  "panels": {
+    "journeyNote": "del camino",
+    "privacyHeading": "Privado por diseño",
+    "trio": [
+      "Tu viaje es tuyo",
+      "Basado en evidencia",
+      "Hecho para reflexionar"
+    ],
+    "caps": {
+      "identityMap": "Mapa de identidad",
+      "strengths": "Fortalezas principales",
+      "values": "Valores esenciales",
+      "realityFit": "Ajuste con la realidad",
+      "directions": "Rumbos profesionales",
+      "fitSignals": "Señales de ajuste",
+      "evidence": "Notas de evidencia",
+      "nextStep": "Siguiente paso",
+      "milestones": "Hitos",
+      "decisionClarity": "Claridad de decisión",
+      "progress": "Progreso"
+    },
+    "coda": {
+      "line": "Sumérgete más. Vive con más claridad.",
+      "sub": "un océano, dos horas"
+    }
+  }
+}

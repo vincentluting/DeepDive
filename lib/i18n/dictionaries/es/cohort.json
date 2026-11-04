@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "Recorrido de investigación",
+    "journeySubtitle": "Complete cada paso en orden para contribuir a nuestra investigación.",
+    "progressLabel": "{percent}% completado",
+    "steps": {
+      "pre_assessment": "Encuesta previa a la evaluación",
+      "quick_dive": "Exploración Quick Dive",
+      "deep_dive": "Evaluación Deep Dive",
+      "post_immediate": "Encuesta posterior a la evaluación",
+      "post_1week": "Encuesta de seguimiento (1 semana)",
+      "coaching": "Coaching Profesional con IA"
+    },
+    "status": {
+      "completed": "Completado",
+      "current": "Comenzar ahora",
+      "locked": "Bloqueado",
+      "available": "Disponible"
+    },
+    "gateMessage": "Complete la encuesta previa a la evaluación antes de comenzar su exploración.",
+    "post1weekNotYet": "Disponible 7 días después de su encuesta posterior.",
+    "allComplete": "¡Gracias! Ha completado todos los pasos de la investigación."
+  }
+}

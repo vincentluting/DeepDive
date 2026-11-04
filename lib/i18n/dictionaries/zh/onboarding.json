@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "欢迎",
+    "subtitle": "先简单了解一下你",
+    "step1Title": "你目前的职业阶段？",
+    "step1Options": {},
+    "step2Title": "你来这里的目的？",
+    "step2Options": {},
+    "startButton": "开始探索",
+    "skipButton": "暂时跳过"
+  }
+}

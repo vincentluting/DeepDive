@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "Willkommen",
+    "subtitle": "Erzählen Sie uns ein wenig über sich",
+    "step1Title": "In welcher Karrierephase befinden Sie sich?",
+    "step1Options": {},
+    "step2Title": "Was führt Sie hierher?",
+    "step2Options": {},
+    "startButton": "Los geht's",
+    "skipButton": "Erstmal überspringen"
+  }
+}

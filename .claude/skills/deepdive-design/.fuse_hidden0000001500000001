@@ -1,0 +1,110 @@
+---
+name: deepdive-design
+description: |
+  Deep Dive 项目专属的 UI/UX 设计智能系统。当用户请求创建、修改、优化任何 UI 组件、页面布局、视觉效果、动画、配色方案时，自动激活此 Skill。
+  触发场景包括但不限于：新建组件、页面重设计、Panel/报告视觉优化、Profile 页面开发、Quick Dive / Deep Dive 问卷 UI、教练聊天界面、着陆页、仪表盘、分享卡片、移动端适配、暗色模式调整、动画效果、响应式布局。
+  即使用户没有明确说"设计"或"UI"，只要涉及视觉呈现和用户体验，都应该使用此 Skill。
+---
+
+# Deep Dive Design System — AI 设计智能
+
+你正在为 **Deep Dive** (AI Career Exploration Companion) 构建 UI。这是一个职业探索平台，核心隐喻是**深海探索**——用户从海面(Quick Dive)逐步下潜到深海(Deep Dive)，探索自己的职业身份。
+
+所有设计决策都服务于这个隐喻：色彩随深度变化、玻璃态模拟水下光线、动画模拟水中漂浮。
+
+## 技术栈
+
+- Next.js 16 (App Router) + React 19 + TypeScript strict
+- **Tailwind CSS v4** (配置在 `globals.css` 的 `@theme inline` 块, 无 tailwind.config 文件)
+- Radix UI (shadcn/ui) — 基础组件在 `components/ui/`
+- Framer Motion 12 — 交互动画和页面过渡
+- 移动优先 (375px 基准), 响应式到 1280px+
+
+## 设计决策路由
+
+根据你要做的事情，查阅对应的参考文件：
+
+| 你要做什么 | 查阅 |
+|-----------|------|
+| 选择/调整颜色、渐变、深度背景 | `references/color-system.md` |
+| 排版、字体大小、中英文处理 | `references/typography.md` |
+| 构建组件、使用 shadcn、按钮/卡片 | `references/components.md` |
+| 添加动画、过渡、交互反馈 | `references/animation.md` |
+| 布局、间距、响应式、玻璃态 | `references/layout.md` |
+
+对于复杂任务（如"重设计报告页面"），你可能需要同时查阅多个参考文件。
+
+## 核心设计原则
+
+### 1. 深度决定一切
+
+页面的视觉深度（从 `void` 到 `sky`）决定了背景色、文字色、玻璃态透明度、动画强度。这不是随意选择——每个页面在用户旅程中有固定的深度位置：
+
+- **void / abyss**: 着陆页 Hero、完成页（最深、最暗、最沉浸）
+- **deep**: Deep Dive 问卷、报告头部
+- **mid**: 模块过渡、章节引导
+- **reef**: 主色调区域（#0870AE）
+- **shallow**: Quick Dive 报告、分享页
+- **surface / sky**: 仪表盘、设置（最浅、最亮、最日常）
+
+### 2. 品牌排版不可替换
+
+- **Display/Heading**: Fraunces (`var(--font-display)`) — 衬线体，传递温暖和专业
+- **Body**: DM Sans (`var(--font-body)`) — 无衬线，干净可读
+- **中文回退**: Noto Serif SC (heading) / Noto Sans SC + PingFang SC (body)
+
+永远不要建议使用 Inter、Poppins、或其他字体替代。这两款字体是品牌身份的一部分。
+
+### 3. 渐变体系是统一的
+
+品牌渐变 = 海蓝 → 玫瑰粉 → 紫罗兰：
+- `--grad-from: #0870AE` → `--grad-via: #E05291` → `--grad-to: #8B5CF6`
+- 暗色模式的生物发光变体：`#42C6FF` → `#FF6BA6` → `#C4B5FD`
+
+不要引入品牌渐变之外的颜色组合。如果需要新的视觉区分，使用12原型的独立配色。
+
+### 4. 12 原型 = 12 种配色身份
+
+每个职业原型有自己的 colorHex，用于头像、徽章、强调色。在报告和档案中，原型配色是用户的"身份色"，要尊重使用。
+
+### 5. 动画克制且有意义
+
+- 交互反馈: 快速（150-250ms）, spring easing
+- 深度过渡: 中速（400ms）, out-quint
+- 氛围效果: 缓慢（4-8s）, 循环, 非常微妙（opacity < 0.05）
+- 始终支持 `prefers-reduced-motion`
+
+### 6. 英文站零中文，中文站零英文
+
+所有用户可见文本必须走 i18n 字典。组件通过 `dict: Dictionary` prop 获取文本。永远不要硬编码 `isZh ? "中文" : "English"` 模式。
+
+### 7. 不暴露理论框架
+
+报告和用户面的界面中，永远不出现 "RIASEC"、"Big Five"、"Schwartz" 等学术术语。只用品牌概念和自然语言。
+
+## 组件开发清单
+
+创建或修改组件时，确认以下每一项：
+
+- [ ] 使用 CSS 变量而非硬编码颜色值
+- [ ] 375px 宽度下可用（mobile-first）
+- [ ] 支持 dark mode（通过 CSS 变量自动适配，或 `.dark` 类覆写）
+- [ ] 触控目标 ≥ 44px
+- [ ] 文本来自 i18n 字典 (dict prop)
+- [ ] Framer Motion 动画有 reduced-motion 回退
+- [ ] 使用项目既有的 shadcn 组件（`components/ui/`）而非重新造轮子
+- [ ] 中文排版检查（line-height 1.8, letter-spacing 0.02em）
+
+## 页面深度映射（快速参考）
+
+| 页面 | 深度 | 背景 |
+|------|------|------|
+| Landing Hero | void | `#010E1A` |
+| Quick Dive 问卷 | shallow-mid | `#E8F2FC` → `#065A90` |
+| Deep Dive 问卷 | abyss-deep | `#011828` → `#022A4A` |
+| 报告 Header | abyss | `#011828` |
+| 报告 Body | shallow | `#F0FAFF` |
+| 教练聊天 | deep | `#022A4A` |
+| 仪表盘 | surface | `#F0F6FC` |
+| Profile | reef-surface | `#0870AE` → `#F0F6FC` |
+| 设置 | sky | `#FAFBFC` |

@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "Percorso di ricerca",
+    "journeySubtitle": "Completi ogni fase in ordine per contribuire alla nostra ricerca.",
+    "progressLabel": "{percent}% completato",
+    "steps": {
+      "pre_assessment": "Sondaggio pre-valutazione",
+      "quick_dive": "Esplorazione Quick Dive",
+      "deep_dive": "Valutazione Deep Dive",
+      "post_immediate": "Sondaggio post-valutazione",
+      "post_1week": "Sondaggio di follow-up (1 settimana)",
+      "coaching": "Coaching Carriera IA"
+    },
+    "status": {
+      "completed": "Completato",
+      "current": "Inizia ora",
+      "locked": "Bloccato",
+      "available": "Disponibile"
+    },
+    "gateMessage": "Completi il sondaggio pre-valutazione prima di iniziare la Sua esplorazione.",
+    "post1weekNotYet": "Disponibile 7 giorni dopo la Sua post-valutazione.",
+    "allComplete": "Grazie! Ha completato tutte le fasi della ricerca."
+  }
+}

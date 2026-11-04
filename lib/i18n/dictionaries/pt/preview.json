@@ -1,0 +1,326 @@
+{
+  "hero": {
+    "badge": "Plataforma de Exploração de Carreira com IA Centrada no Humano",
+    "heading": "Encontre o trabalho que combina com você.",
+    "headingAccent": "",
+    "subtitle": "Primeiro, desacelere. Ouça a si mesmo.",
+    "cta": "Comece a Olhar para Dentro",
+    "ctaNote": "Grátis · 3–5 min · 38 perguntas · Resultados instantâneos",
+    "ctaNoSignup": "Sem necessidade de cadastro para começar",
+    "trustPillars": [
+      "Ciência rigorosa",
+      "IA acolhedora",
+      "Olhar para dentro",
+      "Para todos"
+    ],
+    "ctaReturning": "Ver Meus Resultados",
+    "ctaReturningNote": "Bem-vindo(a) de volta · Cadastre-se para desbloquear seu perfil completo",
+    "firstDescentRitual": "5 minutos, até o primeiro espelho →",
+    "ritualLink": "Cinco minutos até o seu primeiro espelho"
+  },
+  "showcase": {
+    "meter": [
+      "Superfície",
+      "Clareza",
+      "Direção",
+      "Descoberta"
+    ],
+    "railLabel": "Navegação de profundidade",
+    "depthChoice": {
+      "title": "Escolha sua profundidade",
+      "desc": "Escolha a experiência que combina com o seu momento."
+    },
+    "stats": [
+      {
+        "value": "38",
+        "label": "perguntas · ~5 min"
+      },
+      {
+        "value": "12",
+        "label": "arquétipos de carreira"
+      },
+      {
+        "value": "5",
+        "label": "estruturas psicológicas"
+      }
+    ],
+    "depthCards": [
+      {
+        "t": "Quick Dive",
+        "d": "Desperte uma primeira percepção e mapeie seu radar de interesses.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "Uma exploração mais rica para padrões e direções mais claras.",
+        "tm": "~30–40 min"
+      },
+      {
+        "t": "Immersive Dive",
+        "d": "Uma jornada guiada para clareza completa.",
+        "tm": "~60+ min"
+      }
+    ],
+    "entryCard": {
+      "t": "Comece aqui",
+      "d": "Cinco minutos abaixo da superfície — o seu primeiro espelho."
+    },
+    "returningCard": {
+      "t": "Continue o seu mergulho",
+      "d": "Retome de onde parou."
+    },
+    "instruments": {
+      "reportChapters": [
+        "Âncoras de carreira",
+        "A sua paisagem",
+        "O lado sombra",
+        "Uma carta para si",
+        "Metodologia"
+      ],
+      "tools": [
+        "Polimento do currículo",
+        "Carta de apresentação",
+        "Preparação para entrevistas",
+        "Pitch de elevador",
+        "Reescrita do LinkedIn",
+        "Quebra-gelos de networking",
+        "Plano de ação"
+      ],
+      "coach": {
+        "context": "O coach leu o seu perfil de avaliação",
+        "user": "Porque é que saio sempre dos empregos ao fim de dois anos?",
+        "reply": "O seu mapa de valores mostra que a autonomia pesa mais do que a estabilidade — o padrão não é inquietação, é a procura de espaço para construir."
+      }
+    },
+    "portrait": {
+      "title": "O seu perfil de interesses",
+      "dims": [
+        "Construir",
+        "Investigar",
+        "Criar",
+        "Conectar",
+        "Liderar",
+        "Organizar"
+      ]
+    }
+  },
+  "story": {
+    "storyBefore": "Criamos isso porque nós também estávamos perdidos —\nvendo a IA fazer o que passamos anos aprendendo,\nnos perguntando se ainda importávamos.",
+    "storyHighlight": "Então percebemos: a resposta nunca esteve lá fora. Sempre esteve aqui dentro.",
+    "storyAfter": "Esta ferramenta é um presente que fizemos para nós mesmos, e agora para você."
+  },
+  "journey": {
+    "label": "SUA JORNADA",
+    "heading": "Do autoconhecimento",
+    "headingAccent": "à ação profissional.",
+    "items": [
+      {
+        "t": "Quick Dive",
+        "d": "38 perguntas sobre interesses profissionais, cerca de 5 minutos. Mapeie seu perfil RIASEC e descubra quais direções mais te energizam.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "86 perguntas baseadas em cenários sobre personalidade, valores e estilo cognitivo. Não são caixas de seleção — são dilemas reais que revelam o que seu currículo nunca mostra.",
+        "tm": "~20 min"
+      },
+      {
+        "t": "Seu Retrato",
+        "d": "Seu perfil psicológico — revelado instantaneamente. Arquétipo de carreira, dimensões de personalidade, estilo cognitivo, lado sombra. Um espelho que mostra quem você realmente é, não o que seu currículo diz.",
+        "tm": "Instantâneo"
+      },
+      {
+        "t": "Seu Mapa",
+        "d": "Relatório de carreira gerado por IA: âncoras de carreira, melhores combinações, caminhos de crescimento e pontos cegos. Não são conselhos genéricos — é um mapa traçado a partir do seu padrão único.",
+        "tm": "Criado por IA"
+      },
+      {
+        "t": "Coach + Ação",
+        "d": "Não é um chatbot. Um coach que lê o contexto da sua avaliação — seus valores, tensões e direções de carreira. Além de um plano de ação personalizado que transforma a reflexão em próximos passos concretos.",
+        "tm": "Contínuo"
+      }
+    ]
+  },
+  "archetypes": {
+    "label": "12 ARQUÉTIPOS DE CARREIRA",
+    "hoverCaption": "Um destes é você",
+    "heading": "Não são rótulos.",
+    "headingAccent": "São retratos.",
+    "description": "Cada arquétipo conecta duas dimensões de interesse a uma identidade profissional — com suas próprias forças, áreas de crescimento e direções de carreira. Você verá quais papéis combinam naturalmente, quais te esgotam, e por que suas escolhas passadas fazem mais sentido do que você pensava.",
+    "items": [
+      {
+        "name": "O Construtor",
+        "sub": "Criação prática"
+      },
+      {
+        "name": "O Analista",
+        "sub": "Reconhecimento de padrões"
+      },
+      {
+        "name": "O Virtuoso",
+        "sub": "Visão estética"
+      },
+      {
+        "name": "O Coach",
+        "sub": "Potencial humano"
+      },
+      {
+        "name": "O Inconformista",
+        "sub": "Disrupção ousada"
+      },
+      {
+        "name": "O Arquiteto",
+        "sub": "Pensamento sistêmico"
+      }
+    ],
+    "moreNote": "+ 6 arquétipos para descobrir",
+    "marquee": [
+      "O Construtor",
+      "O Cientista",
+      "O Analista",
+      "O Virtuoso",
+      "O Curador",
+      "O Coach",
+      "O Inconformista",
+      "O Arquiteto",
+      "O Pioneiro",
+      "O Visionário",
+      "O Defensor",
+      "O Principal"
+    ]
+  },
+  "whoFor": {
+    "label": "PARA QUEM",
+    "heading": "Feito para quem navega",
+    "headingAccent": "águas desconhecidas.",
+    "items": [
+      {
+        "t": "Profissionais Interculturais",
+        "d": "Construir uma carreira entre países e culturas sem vantagem de casa. Deep Dive mapeia como sua identidade intercultural molda suas forças profissionais — para que você pare de vê-la como lacuna e comece a usá-la como diferencial."
+      },
+      {
+        "t": "Pessoas se Encontrando na Onda da IA",
+        "d": "Quando a IA pode escrever, desenhar, traduzir e programar — o que sobra que é seu? Essa pergunta não é fraqueza. É o começo de algo importante. Deep Dive ajuda você a encontrar o que a IA nunca pode substituir — o que realmente importa para você."
+      },
+      {
+        "t": "Em Transição de Carreira",
+        "d": "Sentindo a atração por algo novo, mas sem certeza de qual direção combina com o verdadeiro você. Deep Dive identifica o fio condutor entre seus papéis anteriores — e aponta para onde ele leva."
+      },
+      {
+        "t": "Recém-Formados",
+        "d": "Opções infinitas, zero clareza. Deep Dive corta o ruído com um perfil baseado em como você realmente pensa e decide — não no que o mercado diz que você deveria querer."
+      }
+    ]
+  },
+  "science": {
+    "label": "METODOLOGIA",
+    "heading": "Psicologia rigorosa.",
+    "headingAccent": "Experiência acolhedora.",
+    "stats": [
+      {
+        "l": "Frameworks",
+        "v": "5"
+      },
+      {
+        "l": "Arquétipos",
+        "v": "12"
+      },
+      {
+        "l": "Perguntas",
+        "v": "124"
+      }
+    ],
+    "foundations": "Construído sobre O*NET Interest Profiler · IPIP · Schwartz Values · Big Five",
+    "academic": "Pesquisa acadêmica na Universidade de Amsterdã — rigor de tese, qualidade de produto.",
+    "credibility": [
+      "Baseado em instrumentos validados usados em pesquisa de orientação profissional no mundo todo — não testes de personalidade de um blog.",
+      "Não compartilhamos seus dados. Apague tudo com um clique, a qualquer momento."
+    ],
+    "affiliation": "Investigação da Universidade de Amesterdão"
+  },
+  "privacy": {
+    "quote": "O que você compartilha aqui\nnunca sai das profundezas.",
+    "desc": "Autoexploração real exige privacidade real. Suas dúvidas, ambições e contradições — seguras aqui, e sempre suas para apagar.",
+    "note": "Design privacy-first · Exclusão completa com um clique",
+    "cta": "Seus dados, suas regras"
+  },
+  "breathQuote": "A carreira certa nunca foi algo para encontrar.\nVocê só precisa se ver.",
+  "glassCard": {
+    "label": "Sua Identidade Profissional",
+    "title": "O Sintetizador",
+    "subtitle": "Criando pontes entre ideias e pessoas",
+    "quote": "\"Você cria significado conectando o que outros ignoram. Sua força não é escolher um caminho — é ver como todos se conectam.\""
+  },
+  "glimpse": "Um vislumbre do que você pode descobrir",
+  "cta": {
+    "heading": "Sua voz interior está esperando",
+    "headingAccent": "você desacelerar e ouvir.",
+    "description": "O padrão por trás das suas decisões de carreira sempre esteve lá. Só precisa de um nome.",
+    "button": "Descobrir Meu Padrão",
+    "note": "Comece grátis · ~5 minutos · Descubra seu arquétipo através de 5 frameworks psicológicos",
+    "buttonReturning": "Continuar Minha Jornada",
+    "noteReturning": "Cadastre-se para desbloquear seu relatório Deep Dive + AI coaching"
+  },
+  "footer": {
+    "tagline": "IA centrada no humano — olhe para dentro, encontre o insubstituível",
+    "motto": "Mergulhe Fundo. Ouça Seu Acorde.",
+    "nav": [
+      "Deep Dive",
+      "Meu Perfil"
+    ],
+    "trust": [
+      "Design privacy-first",
+      "Arquitetura local-first",
+      "Psicologia aberta"
+    ]
+  },
+  "features": {
+    "label": "O QUE VOCÊ VAI RECEBER",
+    "heading": "Um espelho,",
+    "headingAccent": "depois um mapa.",
+    "items": [
+      {
+        "t": "Relatório de Exploração de Carreira",
+        "d": "Um retrato completo de carreira desenhado a partir do seu padrão único."
+      },
+      {
+        "t": "Action Hub",
+        "d": "Transforme insight em ação intencional e progresso mensurável."
+      },
+      {
+        "t": "AI Coach",
+        "d": "Seu parceiro privado de reflexão para mais clareza."
+      },
+      {
+        "t": "Perfil Pessoal",
+        "d": "Seu perfil psicológico, revelado instantaneamente."
+      }
+    ]
+  },
+  "panels": {
+    "journeyNote": "do caminho",
+    "privacyHeading": "Privado por princípio",
+    "trio": [
+      "A sua jornada é sua",
+      "Baseado em evidências",
+      "Feito para refletir"
+    ],
+    "caps": {
+      "identityMap": "Mapa de identidade",
+      "strengths": "Principais forças",
+      "values": "Valores essenciais",
+      "realityFit": "Ajuste à realidade",
+      "directions": "Direções de carreira",
+      "fitSignals": "Sinais de ajuste",
+      "evidence": "Notas de evidência",
+      "nextStep": "Próximo passo",
+      "milestones": "Marcos",
+      "decisionClarity": "Clareza de decisão",
+      "progress": "Progresso"
+    },
+    "coda": {
+      "line": "Mergulhe mais fundo. Viva com mais clareza.",
+      "sub": "um oceano, duas horas"
+    }
+  }
+}

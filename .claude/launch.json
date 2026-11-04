@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Next.js Dev",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["-c", "source ~/.nvm/nvm.sh && npm run dev"],
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "Next.js Dev 3002",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["-c", "source ~/.nvm/nvm.sh && npm run dev -- -p 3002"],
+      "port": 3002,
+      "autoPort": false
+    }
+  ]
+}

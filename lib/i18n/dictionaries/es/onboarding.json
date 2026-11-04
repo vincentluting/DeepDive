@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "Bienvenido",
+    "subtitle": "Cuéntenos un poco sobre usted",
+    "step1Title": "¿En qué etapa profesional se encuentra?",
+    "step1Options": {},
+    "step2Title": "¿Qué le trae aquí?",
+    "step2Options": {},
+    "startButton": "Comenzar",
+    "skipButton": "Omitir por ahora"
+  }
+}

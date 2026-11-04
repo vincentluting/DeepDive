@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "Добро пожаловать",
+    "subtitle": "Расскажите немного о себе",
+    "step1Title": "На каком карьерном этапе вы находитесь?",
+    "step1Options": {},
+    "step2Title": "Что привело вас сюда?",
+    "step2Options": {},
+    "startButton": "Начать",
+    "skipButton": "Пропустить пока"
+  }
+}

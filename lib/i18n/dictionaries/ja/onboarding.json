@@ -1,0 +1,12 @@
+{
+  "onboarding": {
+    "title": "ようこそ",
+    "subtitle": "あなたについて少し教えてください",
+    "step1Title": "キャリアのステージは？",
+    "step1Options": {},
+    "step2Title": "きっかけは何ですか？",
+    "step2Options": {},
+    "startButton": "始めましょう",
+    "skipButton": "今はスキップ"
+  }
+}

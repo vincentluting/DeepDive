@@ -1,0 +1,326 @@
+{
+  "hero": {
+    "badge": "Mensgerichte AI Loopbaanverkenning",
+    "heading": "Vind het werk dat voelt als jou.",
+    "headingAccent": "",
+    "subtitle": "Begin bij jezelf. Luister naar binnen.",
+    "cta": "Begin met Kijken naar Binnen",
+    "ctaNote": "Gratis · 3–5 min · 38 vragen · Direct resultaat",
+    "ctaNoSignup": "Geen registratie nodig om te starten",
+    "ctaReturning": "Bekijk mijn resultaten",
+    "ctaReturningNote": "Welkom terug · Registreer om je volledige profiel te ontgrendelen",
+    "trustPillars": [
+      "Wetenschappelijk onderbouwd",
+      "Warme AI",
+      "Kijk naar binnen",
+      "Voor iedereen"
+    ],
+    "firstDescentRitual": "5 minuten, tot de eerste spiegel →",
+    "ritualLink": "Vijf minuten tot je eerste spiegel"
+  },
+  "showcase": {
+    "meter": [
+      "Oppervlak",
+      "Helderheid",
+      "Richting",
+      "Ontdekking"
+    ],
+    "railLabel": "Dieptenavigatie",
+    "depthChoice": {
+      "title": "Kies je diepte",
+      "desc": "Kies de ervaring die past bij waar je nu bent."
+    },
+    "stats": [
+      {
+        "value": "38",
+        "label": "vragen · ±5 min"
+      },
+      {
+        "value": "12",
+        "label": "loopbaanarchetypen"
+      },
+      {
+        "value": "5",
+        "label": "psychologische kaders"
+      }
+    ],
+    "depthCards": [
+      {
+        "t": "Quick Dive",
+        "d": "Ontsteek inzicht en breng je interessenradar in kaart.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "Een rijkere verkenning voor helderdere patronen en richtingen.",
+        "tm": "~30–40 min"
+      },
+      {
+        "t": "Immersive Dive",
+        "d": "Een begeleide reis naar volledige helderheid.",
+        "tm": "~60+ min"
+      }
+    ],
+    "entryCard": {
+      "t": "Begin hier",
+      "d": "Vijf minuten onder het oppervlak — je eerste spiegel."
+    },
+    "returningCard": {
+      "t": "Ga verder met je duik",
+      "d": "Ga door waar je gebleven was."
+    },
+    "instruments": {
+      "reportChapters": [
+        "Loopbaanankers",
+        "Jouw landschap",
+        "De schaduwzijde",
+        "Een brief aan jou",
+        "Methodologie"
+      ],
+      "tools": [
+        "Cv-optimalisatie",
+        "Sollicitatiebrief",
+        "Interviewvoorbereiding",
+        "Elevatorpitch",
+        "LinkedIn-herschrijving",
+        "Netwerk-ijsbrekers",
+        "Actieplan"
+      ],
+      "coach": {
+        "context": "De coach heeft je assessmentprofiel gelezen",
+        "user": "Waarom vertrek ik steeds na twee jaar?",
+        "reply": "Je waardenkaart toont: autonomie weegt zwaarder dan stabiliteit — het patroon is geen rusteloosheid, maar de zoektocht naar ruimte om te bouwen."
+      }
+    },
+    "portrait": {
+      "title": "Jouw interesseprofiel",
+      "dims": [
+        "Bouwen",
+        "Onderzoeken",
+        "Creëren",
+        "Verbinden",
+        "Leiden",
+        "Ordenen"
+      ]
+    }
+  },
+  "story": {
+    "storyBefore": "We bouwden dit omdat wij ook verdwaald waren —\nterwijl AI deed wat wij jaren hadden geleerd,\nvroegen we ons af of we er nog toe deden.",
+    "storyHighlight": "Toen beseften we: het antwoord was nooit daarbuiten. Het was altijd hierbinnen.",
+    "storyAfter": "Deze tool is een cadeau dat we voor onszelf maakten, en nu voor jou."
+  },
+  "journey": {
+    "label": "JOUW REIS",
+    "heading": "Van zelfkennis",
+    "headingAccent": "naar loopbaanactie.",
+    "items": [
+      {
+        "t": "Quick Dive",
+        "d": "38 vragen over loopbaaninteresses, ongeveer 5 Minuten. Breng je RIASEC-profiel in kaart en ontdek welke richtingen jou het meest energie geven.",
+        "tm": "~5 min"
+      },
+      {
+        "t": "Deep Dive",
+        "d": "86 scenariovragen over persoonlijkheid, waarden en denkstijl. Geen afvinkvakjes — echte dilemma's die onthullen wat je cv nooit laat zien.",
+        "tm": "~20 min"
+      },
+      {
+        "t": "Jouw Portret",
+        "d": "Je psychologisch profiel — direct onthuld. Loopbaanarchetype, persoonlijkheidsdimensies, denkstijl, schaduwkant. Een spiegel die laat zien wie je werkelijk bent, niet wie je cv zegt dat je bent.",
+        "tm": "Direct"
+      },
+      {
+        "t": "Jouw Kaart",
+        "d": "AI-gegenereerd loopbaanrapport: loopbaanankers, beste matches, groeirichtingen en blinde vlekken. Geen generiek advies — een kaart getekend vanuit jouw unieke patroon.",
+        "tm": "AI-gemaakt"
+      },
+      {
+        "t": "Coach + Actie",
+        "d": "Geen chatbot. Een coach die je assessmentcontext leest — je waarden, spanningen en loopbaanrichtingen. Plus een persoonlijk actieplan dat reflectie omzet in concrete volgende stappen.",
+        "tm": "Doorlopend"
+      }
+    ]
+  },
+  "features": {
+    "label": "WAT JE KRIJGT",
+    "heading": "Een spiegel,",
+    "headingAccent": "en dan een kaart.",
+    "items": [
+      {
+        "t": "Loopbaanverkenningsrapport",
+        "d": "Een volledig loopbaanportret, getekend vanuit jouw unieke patroon."
+      },
+      {
+        "t": "Actiehub",
+        "d": "Zet inzicht om in gerichte actie en meetbare vooruitgang."
+      },
+      {
+        "t": "AI-coach",
+        "d": "Je private denkpartner voor meer helderheid."
+      },
+      {
+        "t": "Persoonlijk Profiel",
+        "d": "Je psychologische profiel, direct zichtbaar."
+      }
+    ]
+  },
+  "archetypes": {
+    "label": "12 LOOPBAANARCHETYPEN",
+    "hoverCaption": "Een van deze ben jij",
+    "heading": "Geen labels.",
+    "headingAccent": "Portretten.",
+    "description": "Elk archetype koppelt twee interessedimensies aan een loopbaanidentiteit — met eigen sterktes, groeikansen en loopbaanrichtingen. Je ziet welke rollen bij je passen, welke je uitputten, en waarom je eerdere keuzes logischer zijn dan je dacht.",
+    "items": [
+      {
+        "name": "De Bouwer",
+        "sub": "Hands-on creatie"
+      },
+      {
+        "name": "De Analist",
+        "sub": "Patroonherkenning"
+      },
+      {
+        "name": "De Virtuoos",
+        "sub": "Esthetische visie"
+      },
+      {
+        "name": "De Coach",
+        "sub": "Menselijk potentieel"
+      },
+      {
+        "name": "De Dwarsdenker",
+        "sub": "Durf te doorbreken"
+      },
+      {
+        "name": "De Architect",
+        "sub": "Systeemdenken"
+      }
+    ],
+    "moreNote": "+ 6 archetypen om te ontdekken",
+    "marquee": [
+      "De Bouwer",
+      "De Wetenschapper",
+      "De Analist",
+      "De Virtuoos",
+      "De Genezer",
+      "De Coach",
+      "De Dwarsdenker",
+      "De Architect",
+      "De Pionier",
+      "De Visionair",
+      "De Pleitbezorger",
+      "De Principaal"
+    ]
+  },
+  "whoFor": {
+    "label": "VOOR WIE",
+    "heading": "Gebouwd voor wie navigeert",
+    "headingAccent": "door onbekend water.",
+    "items": [
+      {
+        "t": "Interculturele Professionals",
+        "d": "Een loopbaan opbouwen over landen en culturen heen, zonder thuisvoordeel. Deep Dive brengt in kaart hoe je interculturele identiteit je loopbaansterktes vormt — zodat je het niet meer als een gat ziet, maar als een voorsprong."
+      },
+      {
+        "t": "Mensen die Zichzelf Zoeken in de AI-Golf",
+        "d": "Als AI kan schrijven, ontwerpen, vertalen en programmeren — wat blijft er dan over dat van jou is? Die vraag is geen zwakte. Het is het begin van iets belangrijks. Deep Dive helpt je vinden wat AI nooit kan vervangen — waar je echt om geeft."
+      },
+      {
+        "t": "Loopbaanwisselaars",
+        "d": "Je voelt de trek naar iets nieuws, maar weet niet welke richting bij de echte jij past. Deep Dive identificeert de rode draad tussen je eerdere rollen — en wijst waar die naartoe leidt."
+      },
+      {
+        "t": "Pas Afgestudeerden",
+        "d": "Eindeloze opties, nul duidelijkheid. Deep Dive snijdt door de ruis met een profiel gebaseerd op hoe je werkelijk denkt en beslist — niet wat de markt zegt dat je moet willen."
+      }
+    ]
+  },
+  "science": {
+    "label": "METHODOLOGIE",
+    "heading": "Rigoureuze psychologie.",
+    "headingAccent": "Warme ervaring.",
+    "stats": [
+      {
+        "l": "Kaders",
+        "v": "5"
+      },
+      {
+        "l": "Archetypen",
+        "v": "12"
+      },
+      {
+        "l": "Vragen",
+        "v": "124"
+      }
+    ],
+    "foundations": "Gebouwd op O*NET Interest Profiler · IPIP · Schwartz Values · Big Five",
+    "academic": "Academisch onderzoek aan de Universiteit van Amsterdam — thesis-niveau grondigheid, productkwaliteit ervaring.",
+    "credibility": [
+      "Gebaseerd op gevalideerde instrumenten uit loopbaanonderzoek wereldwijd — geen persoonlijkheidsquizzen van een blogpost.",
+      "We delen je gegevens niet. Verwijder alles met één klik, op elk moment."
+    ],
+    "affiliation": "Onderzoek aan de Universiteit van Amsterdam"
+  },
+  "privacy": {
+    "quote": "Wat je hier deelt\nverlaat nooit de diepte.",
+    "desc": "Echte zelfverkenning vereist echte privacy. Je twijfels, ambities en tegenstrijdigheden — veilig hier, en altijd door jou te verwijderen.",
+    "note": "Privacy-first ontwerp · Volledige gegevensverwijdering met één klik",
+    "cta": "Jouw gegevens, jouw regels"
+  },
+  "breathQuote": "De juiste loopbaan was nooit iets om te vinden.\nJe hoeft alleen jezelf te zien.",
+  "glassCard": {
+    "label": "Jouw Loopbaanidentiteit",
+    "title": "De Synthesizer",
+    "subtitle": "Bruggen bouwen tussen ideeën en mensen",
+    "quote": "\"Je creëert betekenis door te verbinden wat anderen over het hoofd zien. Je kracht is niet één pad kiezen — het is zien hoe ze allemaal samenkomen.\""
+  },
+  "glimpse": "Een glimp van wat je zou kunnen ontdekken",
+  "cta": {
+    "heading": "Je innerlijke stem wacht",
+    "headingAccent": "tot je vertraagt en luistert.",
+    "description": "Het patroon achter je loopbaankeuzes was er altijd al. Het heeft alleen een naam nodig.",
+    "button": "Ontdek Mijn Patroon",
+    "note": "Start gratis · ~5 minuten · Ontdek je archetype via 5 psychologische frameworks",
+    "buttonReturning": "Ga verder met mijn reis",
+    "noteReturning": "Registreer om je Deep Dive-rapport + AI-coaching te ontgrendelen"
+  },
+  "footer": {
+    "tagline": "Mensgerichte AI — kijk naar binnen, vind wat onvervangbaar is",
+    "motto": "Duik Diep. Hoor Je Akkoord.",
+    "nav": [
+      "Deep Dive",
+      "Mijn Profiel"
+    ],
+    "trust": [
+      "Privacy-first ontwerp",
+      "Lokaal-eerst architectuur",
+      "Open psychologie"
+    ]
+  },
+  "panels": {
+    "journeyNote": "voltooid",
+    "privacyHeading": "Privé van nature",
+    "trio": [
+      "Jouw reis is van jou",
+      "Op bewijs gebaseerd",
+      "Gemaakt om na te denken"
+    ],
+    "caps": {
+      "identityMap": "Identiteitskaart",
+      "strengths": "Sterke punten",
+      "values": "Kernwaarden",
+      "realityFit": "Realiteitsmatch",
+      "directions": "Loopbaanrichtingen",
+      "fitSignals": "Matchsignalen",
+      "evidence": "Bewijsnotities",
+      "nextStep": "Volgende stap",
+      "milestones": "Mijlpalen",
+      "decisionClarity": "Beslissingshelderheid",
+      "progress": "Voortgang"
+    },
+    "coda": {
+      "line": "Duik dieper. Leef helderder.",
+      "sub": "één oceaan, twee uren"
+    }
+  }
+}

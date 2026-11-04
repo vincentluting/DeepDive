@@ -1,0 +1,79 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.local
+
+# playwright
+/test-results/
+/playwright-report/
+/e2e/.shared-context.json
+/e2e/.storage-state.json
+.playwright-mcp/
+/journey-test/
+# Playwright MCP writes screenshots to the repo root by default — ignore them
+# so ad-hoc visual-debug artifacts never pollute commits.
+/*.jpeg
+/*.png
+!/public/**/*.jpeg
+!/public/**/*.png
+
+# Generated reports (do not track)
+scripts/db-diagnostics-report.md
+/reports/
+.qa-reports/
+.journey-test-reports/
+
+# cookies / sessions
+cookie.txt
+cookies.txt
+
+# founder workspace (private, local only)
+/founder/
+
+# QA script outputs (regeneratable; see scripts/qa-*.ts)
+/output/
+
+# Backfill / one-shot script outputs (regeneratable CSV/JSON dumps)
+/tmp/
+
+# Avatar CDN build artifacts (output of scripts/convert-avatars-to-webp.sh)
+/dist/
+
+# Claude Code runtime
+.claude/scheduled_tasks.lock
+
+# MCP server config (contains API keys)
+.mcp.json
+.env*.local

@@ -1,0 +1,52 @@
+{
+  "researchLanding": {
+    "meta": {
+      "title": "Deep Dive 职业研究 — 阿姆斯特丹大学硕士论文",
+      "description": "帮助我们研究 AI 辅助自我探索如何改变职业清晰度。约 45 分钟,€15 现金奖励,完全匿名。"
+    },
+    "eyebrow": "阿姆斯特丹大学 · AI 与商业分析硕士",
+    "headline": "你的职业到底想要你成为什么?",
+    "subhead": "一次 45 分钟的引导式自我探索,同时是我们硕士论文的研究。你拿到一份完全个性化的职业身份报告,我们拿到匿名数据来检验 AI 是否真的改变了人看待自己工作的方式。",
+    "study": {
+      "title": "这项研究在检验什么",
+      "body": "大多数职业测评把你贴个标签。我们想检验:一次更深、AI 辅助的自我深潜——价值观、兴趣、成长方向——是否在一周后真的改变了你对自己职业道路的清晰度。注册时随机分配到两个组,具体哪组在 consent 后告知。"
+    },
+    "whatYouGet": {
+      "title": "你能得到什么",
+      "items": [
+        "38 题 Quick Dive + 86 题 Deep Dive(约 45 分钟,可中途暂停)",
+        "一份多章节的个人职业报告(由 LLM 生成,匿名处理)",
+        "为你的画像定制的 AI 职业教练",
+        "完成 7 天后的回访问卷后,获得 €15 礼券"
+      ]
+    },
+    "privacy": {
+      "title": "隐私与伦理",
+      "body": "数据完全匿名,符合 GDPR 存储。论文中只出现去标识化的聚合分析。你可随时退出并申请删除数据。Consent 是显式的——你会在任何数据被记录前阅读完整说明书。"
+    },
+    "eligibility": {
+      "title": "谁可以参与",
+      "items": [
+        "18 岁以上",
+        "在任何领域工作或学习(0-20+ 年职业阶段都欢迎)",
+        "能用英文或中文阅读",
+        "有约 45 分钟不被打扰的时间,以及一周后再 10 分钟"
+      ]
+    },
+    "cta": {
+      "primary": "用我的邀请码开始",
+      "primaryNoInvite": "申请邀请码",
+      "secondary": "再多看看再决定",
+      "inviteHint": "已从你的链接自动填入邀请码",
+      "noInviteHint": "招募采用邀请码制。请发邮件到 deepdivecareer@outlook.com 申请。"
+    },
+    "trust": {
+      "researcher": "研究者",
+      "researcherName": "Vincent Luting · 阿姆斯特丹大学硕士在读",
+      "supervisor": "导师",
+      "supervisorName": "完整名单见 consent 表",
+      "contact": "有疑问? deepdivecareer@outlook.com"
+    },
+    "estimatedTime": "预计时间: 约 45 分钟 + 一周后再 10 分钟"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "journeyGate": {
+    "steps": {
+      "quickDive": "Quick Dive",
+      "deepDive": "Deep Dive",
+      "profile": "个人档案",
+      "report": "职业报告",
+      "actionHub": "行动面板",
+      "coaching": "AI 教练"
+    },
+    "stepIndicator": "第 {{n}} 步 / 共 {{total}} 步",
+    "stepAriaLabel": "第 {{n}} 步 / 共 {{total}} 步: {{label}}, {{status}}",
+    "stepStatus": {
+      "done": "已完成",
+      "blocked": "当前步骤",
+      "pending": "待解锁"
+    },
+    "nav": {
+      "locked": "未解锁"
+    },
+    "actionHub": {
+      "title": "先生成你的职业报告",
+      "body": "行动面板是基于你的职业报告生成的——没有报告就没有可落地的个人化方案。回到个人档案页面生成报告，再来这里查看属于你的行动计划。",
+      "primaryCta": "回到个人档案生成报告",
+      "secondaryCta": "返回个人档案"
+    },
+    "companionsCohort": {
+      "title": "Companions 属于另一个内测群组",
+      "body": "你当前的邀请码暂不包含 Companions 功能。打开设置页可以看到你所属的全部群组——切换或升级后，Companions 会出现在导航里。",
+      "primaryCta": "打开设置"
+    },
+    "companionsOptIn": {
+      "title": "在设置中启用 Companions",
+      "body": "Companions 默认关闭。在设置中开启之后,你的匹配、好友请求和对话都会汇聚到这里。",
+      "primaryCta": "启用 Companions"
+    },
+    "companionsProfile": {
+      "title": "建立你的 Companion 名片",
+      "body": "Companions 通过你公开的一份简短资料来匹配——价值锚点、当前想探索的方向、如何联系你。在设置中创建名片,发现页就会立刻填满。",
+      "primaryCta": "创建 Companion 名片"
+    },
+    "deepDive": {
+      "title": "先完成 Quick Dive",
+      "body": "Deep Dive 基于 Quick Dive 测出的模式继续深入。完成 5-7 分钟的 Quick Dive 后,完整的 86 题 Deep Dive 会自动解锁。",
+      "primaryCta": "开始 Quick Dive",
+      "secondaryCta": "返回 Explore"
+    },
+    "postAssessment": {
+      "title": "请在 {{availableOn}} 回来查看",
+      "body": "这份后续问卷在你的第一次后测(T1)之后第 7 天开放——以便比较一段有意义间隔内的变化。请在上方日期回来填写。",
+      "meta": "开放时间: {{availableOn}}",
+      "primaryCta": "返回 Dashboard"
+    },
+    "pipeline": {
+      "title": "上一次 Deep Dive 未能完成",
+      "body": "评估管道在生成档案之前失败了。你的答案已保留——前往 Dashboard 点击 Retry。如果持续失败,请发邮件到 deepdivecareer@outlook.com,我们会逐条回复。",
+      "primaryCta": "从 Dashboard 重试"
+    }
+  }
+}

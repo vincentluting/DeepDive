@@ -1,0 +1,56 @@
+#!/bin/sh
+# ============================================================
+# Deep Dive — Pre-commit Hook
+#
+# 每次 git commit 时自动运行，不需要手动触发。
+# 安装方式: cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+# ============================================================
+
+echo "🔍 Pre-commit checks..."
+
+# 1. TypeScript type check
+echo "  → TypeScript..."
+npx tsc --noEmit 2>/dev/null
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript errors found. Fix them before committing."
+  npx tsc --noEmit
+  exit 1
+fi
+
+# 2. i18n key sync check
+echo "  → i18n key sync..."
+npm run i18n:check --silent 2>/dev/null
+if [ $? -ne 0 ]; then
+  echo "❌ i18n keys out of sync between en.json and zh.json."
+  npm run i18n:check
+  exit 1
+fi
+
+# 3. Check for debug console.log in staged files (not in catch blocks)
+echo "  → Debug console.log check..."
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(ts|tsx)$' | grep -v '__tests__' | grep -v 'node_modules')
+if [ -n "$STAGED_FILES" ]; then
+  # Look for console.log not preceded by catch or logApiError context
+  FOUND=$(echo "$STAGED_FILES" | xargs grep -n 'console\.log(' 2>/dev/null | grep -v '// intentional' | grep -v 'logApiError' | grep -v '__DEV__')
+  if [ -n "$FOUND" ]; then
+    echo "⚠️  Possible debug console.log found in staged files:"
+    echo "$FOUND"
+    echo "   Add '// intentional' comment or wrap in 'if (__DEV__)' to suppress."
+    # Warning only, don't block commit
+  fi
+fi
+
+# 4. Check for hardcoded Chinese/English in staged component files
+echo "  → Hardcoded strings check..."
+STAGED_COMPONENTS=$(git diff --cached --name-only --diff-filter=ACM | grep -E 'components/.*\.(ts|tsx)$')
+if [ -n "$STAGED_COMPONENTS" ]; then
+  # Quick check for common patterns of hardcoded UI text
+  HARDCODED=$(echo "$STAGED_COMPONENTS" | xargs grep -n -E "([\x{4e00}-\x{9fff}]|'[A-Z][a-z]+ [a-z]+')" 2>/dev/null | grep -v 'dict\.' | grep -v 'import' | grep -v '//' | head -5)
+  if [ -n "$HARDCODED" ]; then
+    echo "⚠️  Possible hardcoded UI text (should use i18n dict):"
+    echo "$HARDCODED"
+  fi
+fi
+
+echo "✅ Pre-commit checks passed."
+exit 0

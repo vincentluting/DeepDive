@@ -1,0 +1,24 @@
+{
+  "cohort": {
+    "journeyTitle": "研究项目进度",
+    "journeySubtitle": "请按顺序完成每一步，助力我们的研究。",
+    "progressLabel": "已完成 {percent}%",
+    "steps": {
+      "pre_assessment": "前测评估问卷",
+      "quick_dive": "快速探索",
+      "deep_dive": "深度探索评估",
+      "coaching": "AI 职业教练",
+      "post_immediate": "后测评估问卷",
+      "post_1week": "回访问卷（一周后）"
+    },
+    "status": {
+      "completed": "已完成",
+      "current": "立即开始",
+      "locked": "未解锁",
+      "available": "可填写"
+    },
+    "gateMessage": "请先完成前测评估问卷，再开始探索之旅。",
+    "post1weekNotYet": "将在后测评估 7 天后开放。",
+    "allComplete": "感谢你完成了所有研究步骤！"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "researchLanding": {
+    "meta": {
+      "title": "Deep Dive Career Study — University of Amsterdam research",
+      "description": "Help us study how AI-assisted self-exploration changes career clarity. ~45 minutes, €15 compensation, fully anonymous."
+    },
+    "eyebrow": "University of Amsterdam · MSc in AI & Business Analytics",
+    "headline": "What does your career actually want from you?",
+    "subhead": "A 45-minute guided self-exploration that doubles as our master's thesis study. You walk away with a personalised career identity report. We walk away with anonymised data to test whether AI changes how people see their work.",
+    "study": {
+      "title": "What the study is testing",
+      "body": "Most career-tests sort you into a label. We're testing whether a longer, AI-assisted dive — values, interests, growth direction — actually shifts how clearly you see your own career path one week later. Two conditions are randomly assigned at signup; you'll know which after consent."
+    },
+    "whatYouGet": {
+      "title": "What you get",
+      "items": [
+        "A 38-question Quick Dive + 86-question Deep Dive (about 45 min total, can be paused)",
+        "A multi-chapter personal career report (LLM-generated, anonymised)",
+        "Access to an AI career coach trained on your profile",
+        "€15 voucher upon completion of the 7-day follow-up survey"
+      ]
+    },
+    "privacy": {
+      "title": "Privacy & ethics",
+      "body": "Data is anonymised and stored under GDPR. Only aggregated, de-identified analyses appear in the thesis. You can withdraw at any time and request deletion. Consent is explicit — you'll read the full sheet before any data is recorded."
+    },
+    "eligibility": {
+      "title": "Who can join",
+      "items": [
+        "18+ years old",
+        "Working or studying in any field (career stage 0–20+ years)",
+        "Comfortable reading English or 中文",
+        "Has ~45 minutes uninterrupted, plus 10 minutes one week later"
+      ]
+    },
+    "cta": {
+      "primary": "Start with my invite code",
+      "primaryNoInvite": "Get an invite code",
+      "secondary": "Read more before deciding",
+      "inviteHint": "Invite code prefilled from your link",
+      "noInviteHint": "Recruitment is invite-only. Email deepdivecareer@outlook.com to request access."
+    },
+    "trust": {
+      "researcher": "Researcher",
+      "researcherName": "Vincent Luting · MSc candidate, University of Amsterdam",
+      "supervisor": "Supervisor",
+      "supervisorName": "Listed on the consent form",
+      "contact": "Questions? deepdivecareer@outlook.com"
+    },
+    "estimatedTime": "Estimated time: ~45 minutes + 10 minutes one week later"
+  }
+}
