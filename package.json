@@ -93,7 +93,7 @@
     "@eslint/js": "^10.0.1",
     "@next/bundle-analyzer": "^16.2.9",
     "@playwright/test": "^1.58.2",
-    "@stryker-mutator/core": "^9.6.0",
+    "@stryker-mutator/core": "^10.1.1",
     "@stryker-mutator/typescript-checker": "^9.6.0",
     "@stryker-mutator/vitest-runner": "^9.6.0",
     "@tailwindcss/postcss": "^4.1.9",
