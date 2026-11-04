@@ -13,7 +13,8 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
-export const runtime = "edge";
+// Node.js runtime: the edge bundle exceeds the 1 MB Hobby-plan limit.
+export const runtime = "nodejs";
 
 /** Parse hex color to rgba string */
 function hexToRgba(hex: string, alpha: number): string {
